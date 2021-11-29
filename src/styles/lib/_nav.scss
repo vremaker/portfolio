@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #d24584;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+}
+  
+@media (max-width: 992px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+}
