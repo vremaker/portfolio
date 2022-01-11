@@ -1,11 +1,12 @@
 <template>
 <WithNav>
-  <div id="home" class="d-flex" align-v="stretch">
-    <div id="text">
-      <h1>Hi There, I'm Valerie</h1> 
-      <p>I'm a Human Centered Designer</p>
+  <div id="home" class="d-flex justify-content-center w-100" align-h="between">
+    <img src="assets/sketch.png" alt="sketch of girl with pink hair in double buns" class="h-65  align-self-end d-lg-block d-sm-none"  /> 
+    <div id="text" class="d-flex align-items-center" >
+      <div class="w-100 p-5 mx-5"> <h1>Hi There, <br />  I'm Valerie Remaker </h1>
+     <p>I'm a Human Centered Designer</p> </div>
+    
     </div>
-   <img src="assets/sketch.png" alt="sketch of girl with pink hair in double buns" class="h-50 align-self-end"  /> 
   </div> 
   <div> 
     <h1> YEET </h1>
@@ -30,8 +31,24 @@ export default {
   height: 100vh;
   background-color: #d24584;
 }
+
 #text {
-  color: white;
+  color: white !important;
   text-align:center;
+}
+
+a.nav-link {
+  color:white !important;
+}
+
+h1 {
+  font-size: 45pt;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+p {
+  font-size: 15pt;
+  font-family: 'Raleway', sans-serif;
 }
 </style>
