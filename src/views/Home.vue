@@ -1,7 +1,7 @@
 <template>
 <WithNav>
-  <div id="home" class="d-flex justify-content-center w-100" align-h="between">
-    <img src="assets/sketch.png" alt="sketch of girl with pink hair in double buns" class="h-65  align-self-end d-lg-block d-sm-none"  /> 
+  <div id="home" class="d-flex justify-content-around w-100" align-h="between">
+    <img src="assets/sketch.png" alt="sketch of girl with pink hair in double buns" class="sketch align-self-end d-lg-block d-none"  /> 
     <div id="text" class="d-flex align-items-center" >
       <div class="w-100 p-5 mx-5"> <h1>Hi There, <br />  I'm Valerie Remaker </h1>
      <p>I'm a Human Centered Designer</p> </div>
