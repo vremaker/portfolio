@@ -8,8 +8,9 @@
         I'm a senior studying Human Computer Interaction and Psychology at The University of Washington. I am passionate about creating fun, engaging, and 
         interactive experiences for users.  
       </p>
-      <div id="connect" class=""> 
-        <img src="assets/Ll-ln-Bug.png"/>
+      <div class="connect">
+        <a href="" class="icon" target="_blank"><img src="assets/linked.svg" alt="my linkedin"/></a>
+        <a href="" class="icon" target="_blank"><img src="assets/email.svg" alt="email me"/></a>
       </div>
       </div>
       
@@ -77,5 +78,10 @@ h1 {
 p {
   font-size: 15pt;
   font-family: 'Raleway', sans-serif;
+}
+
+.icon {
+  width: 15%;
+  height: 15%;
 }
 </style>

@@ -1,12 +1,13 @@
 <template>
  <WithNav>
-   <div class="cow d-flex justify-content-around align-items-center">
-     <div class="d-flex justify-content-around align-items-center">
-     <div id="img" :style="{'background-image': 'url(assets/vertical-swoop.png)'}" class="cow small d-flex  justify-content-center align-items-center" :class="(Width > 960)? show : hide ">
-      <img class="image" src="assets/val.png" alt="pink haired girl in front of a big rock" />
+   <div class="cow d-flex justify-content-around align-items-start align-items-lg-center mt-5 mt-lg-0">
+     <div class="d-flex justify-content-around align-items-center flex-column flex-lg-row">
+     <div id="img" :style="{'background-image': 'url(assets/vertical-swoop.png)'}" class="cow small d-flex  justify-content-center align-items-center">
+      <img class="image" src="assets/val.png" alt="A blonde girl standing in front of a colorful wall" />
      </div>
-     <img class="image" :class="(windowWidth > 960)? hide : show " src="assets/val.png" alt="pink haired girl in front of a big rock" />
-     <div class="large">
+        <img id="mobile" class="image mt-5" src="assets/val.png" alt="A blonde girl standing in front of a colorful wall" />
+
+     <div id="text-box" class="large">
        <div id="text">
        <h1>It's nice to meet you!</H1>
        <p>
@@ -45,10 +46,39 @@ export default{
   },
   data() {
     return {
- 
-    } 
+      width: window.innerWidth
+    }
   },
-
+  created() {
+    window.addEventListener("resize", this.yo);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.yo);
+  },
+  mounted() {
+     if(window.innerWidth < 992) {
+        document.querySelector('#img').classList.add('hidden');
+        document.querySelector("#mobile").classList.remove('hidden');
+        document.querySelector('#text-box').classList.remove("large");
+      } else {
+        document.querySelector('#img').classList.remove('hidden');
+        document.querySelector("#mobile").classList.add('hidden');
+        document.querySelector("#text-box").classList.add("large");
+      }
+  },
+  methods: {
+    yo(e) {
+      if(window.innerWidth < 992) {
+        document.querySelector('#img').classList.add('hidden');
+        document.querySelector("#mobile").classList.remove('hidden');
+        document.querySelector('#text-box').classList.remove("large");
+      } else {
+        document.querySelector('#img').classList.remove('hidden');
+        document.querySelector("#mobile").classList.add('hidden');
+        document.querySelector("#text-box").classList.add("large");
+      }
+    }
+  },
 }
 </script>
 
@@ -57,6 +87,9 @@ export default{
     height: 100vh;
   }
 
+  .hidden {
+    display: none !important;
+  }
   .small {
     width: 50%;
  
@@ -67,7 +100,10 @@ export default{
   }
 
   #text {
-    width: 80%;
+    width: 70%;
+    margin:auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   
   .image {

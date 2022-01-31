@@ -5,14 +5,26 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="body-cop">
-          <b-nav-item to="/about">About Me</b-nav-item>
-          <b-nav-item href="#">My Work</b-nav-item>
-          <b-nav-item href="#">Let's Connect</b-nav-item>
+          <b-nav-item @click="scrollToTop" to="#portfolio">My Work</b-nav-item>
+          <b-nav-item target="_blank" href="https://drive.google.com/file/d/1NUT5X41K9irl5SBB76dpzCVG5AYOMNSS/view?usp=sharing" >My Resume</b-nav-item>
+          <b-nav-item @click="scrollToTop" to="/About">About Me</b-nav-item>
+
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
   </div>
 </template>
+<script>
+
+
+export default {
+    methods: { 
+  scrollToTop() {
+    window.scrollTo(0,0);
+  }
+}
+}
+</script>
 
 <style scoped>
   .display {
