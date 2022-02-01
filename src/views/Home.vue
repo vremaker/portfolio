@@ -8,9 +8,12 @@
         I'm a senior studying Human Computer Interaction and Psychology at The University of Washington. I am passionate about creating fun, engaging, and 
         interactive experiences for users.  
       </p>
-      <div class="connect">
-        <a href="" class="icon" target="_blank"><img src="assets/linked.svg" alt="my linkedin"/></a>
-        <a href="" class="icon" target="_blank"><img src="assets/email.svg" alt="email me"/></a>
+      <div id="connect" class="d-flex justify-content-center flex-row-wrap">
+        <a href="" target="_blank"><img class="icon" src="assets/email.svg" alt="email me"/></a>
+        <a href="" target="_blank"><img class="icon" src="assets/call.svg" alt="my linkedin"/></a>
+        <a href="" target="_blank"><img class="icon" src="assets/linked.svg" alt="my linkedin"/></a>
+        <a href="" target="_blank"><img class="icon" src="assets/insta.svg" alt="my linkedin"/></a>
+        <a href="" target="_blank"><img class="icon" src="assets/github.svg" alt="my linkedin"/></a>
       </div>
       </div>
       
@@ -18,7 +21,11 @@
     </div>
     <div id="projects">
       <div class="portfolio-piece">
+        <img class="image" src="assets/tiles/zoom-u.jpg" /> 
+        <div>
           <h1>OnTrak</h1> 
+          <p></p>
+        </div>
         </div>
         <div class="portfolio-piece">
           <h1>OnTrak</h1> 
@@ -53,9 +60,7 @@ export default {
     background-size: cover;
     background-position:center;
 }
-logo {
-  color: black;
-}
+
 #woo {
   background-color: white;
   border-radius: 5px;
@@ -80,8 +85,21 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
+#projects {
+  width: 90%;
+  background-color: red;
+  margin: auto;
+}
+
 .icon {
-  width: 15%;
-  height: 15%;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+.image {
+  width: 20%;
+  height: auto;
 }
 </style>
