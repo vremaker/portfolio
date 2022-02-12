@@ -27,8 +27,7 @@
         into simulated natural environments. 
         <br /><br />
         I also work as an Engineering Ambassador for the College of Engineering to help prospective students get excited about our 
-        engineering program. When I am not studying, I love to crochet, 
-        swing dance, and enjoy the natural world. 
+        engineering program. When I am not studying, I love to crochet, and enjoy the natural world. 
 </p>
 </div>
        </div> 
@@ -84,48 +83,51 @@ export default{
 
 <style lang="scss" scoped>
   .cow {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
   }
 
   .hidden {
     display: none !important;
   }
   .small {
-    width: 50%;
+    width: 40%;
  
   }
 
   .large {
-    width: 50%;
+    width: 60%;
   }
 
   #text {
-    width: 70%;
-    margin:auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    width: 100%;
+    padding: 5%;
+    margin:0;
+    margin-top:5%;
   }
   
   .image {
-    width: 60%;
+    width: 50%;
     height:auto;
+        
   }
 
   #img {
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+ 
   }
 
   h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 800;
   }
 
   p {
     font-family: "Raleway", san-serif;
-    font-size: 1em;
+    font-size: .9em;
   }
 
   .show {

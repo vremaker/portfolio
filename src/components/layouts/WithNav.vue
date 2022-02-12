@@ -1,6 +1,6 @@
 <template>
     <div id="oof">
-        <Nav class=""/>
+        <Nav />
         <slot></slot>
     </div>
 </template>
