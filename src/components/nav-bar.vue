@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" class="px-3 navbar fixed-top ">
+    <b-navbar toggleable="lg" type="dark" class="px-3 navbar fixed-top">
       <b-navbar-brand class="display" to="/">Valerie Remaker</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -29,7 +29,6 @@ export default {
 <style scoped>
   .display {
     font-family: 'Playfair Display', serif;
-
   }
   .body-cop {
     font-family: 'Raleway', sans-serif;

@@ -19,63 +19,24 @@
       
     </div>
     </div>
+<<<<<<< HEAD
     <div id="projects" class="my-5">
       <div class="portfolio-piece d-flex flex-column flex-lg-row  align-items-center justify-content-center">
         <img class="image" src="assets/tiles/on-trak.png" alt="fuck" /> 
+=======
+    <div id="projects">
+      <div class="portfolio-piece">
+        <img class="image" src="assets/tiles/zoom-u.jpg" /> 
+>>>>>>> parent of f40a0d14 (idk)
         <div>
           <h1>OnTrak</h1> 
-          <p>This is the short little blurb about onTrak </p>
-          <div class="button"><p>View Process</p></div>
           <p></p>
         </div>
         </div>
-      <div class="portfolio-piece d-flex flex-column-reverse flex-lg-row flex-row align-items-center justify-content-center">
-        <div>
-          <h1>Emerald City Transit</h1> 
-          <p></p>
-          <div class="button"><p>View Process</p></div>
-          <p></p>
+        <div class="portfolio-piece">
+          <h1>OnTrak</h1> 
         </div>
-        <img class="image" src="assets/tiles/ect.png" alt="fuck" /> 
-        </div>
-        <div class="portfolio-piece d-flex flex-column flex-lg-row flex-row align-items-center justify-content-center">
-        <img class="image" src="assets/tiles/crochet-buddy.png" alt="fuck" /> 
-        <div>
-          <h1>Crochet Buddy</h1> 
-          <p>This is the short little blurb about onTrak </p>
-          <div class="button"><p>View Process</p></div>
-          <p></p>
-        </div>
-        </div>
-          <div class="portfolio-piece flex-column-reverse flex-lg-row d-flex flex-row align-items-center justify-content-center">
-        <div>
-          <h1>The Virtual College Experience</h1> 
-          <p></p>
-          <div class="button"><p>View Process</p></div>
-          <p></p>
-        </div>
-        <img class="image" src="assets/tiles/zoom-u.png" alt="fuck" /> 
-        </div>
-      
-      <div class="portfolio-piece d-flex flex-column flex-lg-row flex-row align-items-center justify-content-center">
-        <img class="image" src="assets/tiles/common-ground.png" alt="fuck" /> 
-        <div>
-          <h1>Common Ground</h1> 
-          <p>This is the short little blurb about onTrak </p>
-          <div class="button"><p>View Process</p></div>
-          <p></p>
-        </div>
-        </div>
-       <div class="portfolio-piece d-flex flex-column flex-lg-row flex-row align-items-center justify-content-center">
-       
-        <div>
-          <h1>Common Ground</h1> 
-          <p>This is the short little blurb about onTrak </p>
-          <div class="button"><p>View Process</p></div>
-          <p></p>
-        </div>
-         <img class="image" src="assets/tiles/night-owl.png" alt="fuck" /> 
-        </div>
+
     </div>
   </WithNav>
 </template>
@@ -92,44 +53,12 @@ export default {
   data() {
     return {
       image: {backgroundImage: 'url(assets/swoop.png)'},
-      portfolio: [
-        {
-          "title": "OnTrak",
-          "description": "A simple, fun, and easy to use troubleshooting application designed to empower users to resolve common hardware issues without calling customer service for help. ",
-          "short-name": "on-trak"
-        },
-        {
-          "title": "Emerald City Transit",
-          "description": "A simple, fun, and easy to use troubleshooting application designed to empower users to resolve common hardware issues without calling customer service for help. ",
-          "short-name": "ECT"
-        },
-             {
-          "title": "The Virtual College Experience",
-          "description": "A simple, fun, and easy to use troubleshooting application designed to empower users to resolve common hardware issues without calling customer service for help. ",
-          "short-name": "zoom-u"
-        },
-        {
-          "title": "OnTrak",
-          "description": "A simple, fun, and easy to use troubleshooting application designed to empower users to resolve common hardware issues without calling customer service for help. ",
-          "short-name": "on-trak"
-        },
-       {
-          "title": "OnTrak",
-          "description": "A simple, fun, and easy to use troubleshooting application designed to empower users to resolve common hardware issues without calling customer service for help. ",
-          "short-name": "on-trak"
-        },
-        {
-          "title": "OnTrak",
-          "description": "A simple, fun, and easy to use troubleshooting application designed to empower users to resolve common hardware issues without calling customer service for help. ",
-          "short-name": "on-trak"
-        }
-      ]
     };
   }
 }
 </script>
 
-<style lnag="scss" scoped>
+<style scoped>
 #landing {
     height: 100vh;
     background-color: #d24584;
@@ -164,7 +93,8 @@ p {
 
 #projects {
   width: 90%;
-  margin:auto;
+  background-color: red;
+  margin: auto;
 }
 
 .icon {
@@ -178,12 +108,4 @@ p {
   width: 20%;
   height: auto;
 }
-
-
-@media (max-width: 992px) {
-  .image { 
-    width: 60%;
-    margin: auto;
-  }
- }
 </style>
