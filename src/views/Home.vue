@@ -27,9 +27,7 @@
           <p></p>
         </div>
         </div>
-        <div class="portfolio-piece">
-          <h1>OnTrak</h1> 
-        </div>
+       
 
     </div>
   </WithNav>
