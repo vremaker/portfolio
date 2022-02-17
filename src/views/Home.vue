@@ -19,16 +19,10 @@
       
     </div>
     </div>
-<<<<<<< HEAD
     <div id="projects" class="my-5">
       <div class="portfolio-piece d-flex flex-column flex-lg-row  align-items-center justify-content-center">
         <img class="image" src="assets/tiles/on-trak.png" alt="fuck" /> 
-=======
-    <div id="projects">
-      <div class="portfolio-piece">
-        <img class="image" src="assets/tiles/zoom-u.jpg" /> 
->>>>>>> parent of f40a0d14 (idk)
-        <div>
+        <div> 
           <h1>OnTrak</h1> 
           <p></p>
         </div>
