@@ -21,7 +21,7 @@
     </div>
     <div id="projects" class="my-5">
       <div class="portfolio-piece d-flex flex-column flex-lg-row  align-items-center justify-content-center">
-        <img class="image" src="assets/tiles/ontrak.png" alt="fuck" /> 
+        <img class="image" src="assets/tiles/on-trak.png" alt="fuck" /> 
         <div>
           <h1>OnTrak</h1> 
           <p>This is the short little blurb about onTrak </p>
