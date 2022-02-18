@@ -3,6 +3,7 @@
         <Nav class="mb-5"/>
         <div id="feet-pix">
         <slot></slot>
+        
         </div>
     </div>
 </template>
@@ -17,8 +18,5 @@
 </script> 
 
 <style scoped>
-#feet-pix {
-    
-    background-color: red;
-}
+
 </style>
