@@ -1,7 +1,6 @@
 <template>
   <WithNav>
-    <div
-      id="landing"
+    <div id="landing"
       :style="image"
       class="d-flex align-items-center justify-content-center"
     >
@@ -59,33 +58,23 @@
         </div>
       </div>
     </div>
-    <div id="projects">
-      <!--<h1 class="my-4"> Take a look at some of my favorite projects! </h1>
-      <div 
-        v-for="(tile, i) in tiles" 
-        :key="tile.short-name" 
-        class="portfolio-item d-flex justify-content-around align-items-center text-center" 
-        :class="(i%2 == 0) ? 'flex-column flex-lg-row' : 'flex-column flex-lg-row-reverse '
-        ">
-        <img class="image" :src="'assets/tiles/' + tile.short + '.png'" :alt="tile.name + 'icon'" />
-        <div class="text" 
-        :class="(i%2 == 0) ? 'left' : 'right'"> 
-          <h2>{{tile.name}}</h2>
-          <p>{{tile.description}}</p>
-          <div class="button"><p>View Project Details</p></div>
-        </div>
-      </div>-->
-      <div v-for="(tile, i) in tiles" 
-        :key="tile.short-name" >
+
+    <!--PROJECTS --> 
+    <div id="portfolio">
+      <h2>My Projects!</h2>
+    <div id="projects" class="d-flex flex-wrap justify-content-around">
+      <div v-for="(tile) in tiles" 
+        :key="tile.short-name"
+        class="card">
         <img class="card-img-top image" :src="'assets/tiles/' + tile.short + '.png'" alt="Card image cap" />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h2 class="card-title">{{tile.name}}</h2>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+           {{tile.description}}
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <router-link to="/DCI" class="button">View Project Details</router-link>
         </div>
+      </div>
       </div>
     </div>
   </WithNav>
@@ -99,6 +88,10 @@ export default {
   name: "Home",
   components: {
     WithNav,
+  },
+  created () {
+    window.scrollTo(0,0);
+
   },
   data() {
     return {
@@ -146,7 +139,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #landing {
   height: 100vh;
   background-color: #d24584;
@@ -160,15 +153,6 @@ export default {
   border-radius: 5px;
 }
 
-.portfolio-item {
-  width: 90%;
-  margin: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  background-color: #fea5d9;
-  color: black;
-}
-
 #landing h1 {
   font-size: 3em;
   font-family: "Playfair Display", serif;
@@ -176,7 +160,8 @@ export default {
 }
 
 p {
-  font-size: 15pt;
+  font-size: 12pt;
+
   font-family: "Raleway", sans-serif;
 }
 
@@ -187,25 +172,30 @@ p {
   margin-right: 10px;
 }
 
-.image {
-  width: 25%;
-  height: auto;
-}
+#portfolio {
+  width: 90%;
+  margin: auto;
 
-.text {
-  width: 50%;
+  h2 {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    font-size: 2em;
+    font-family: "Playfair Display", serif;
+
+  }
 }
 
 .button {
-  background-color: #d24584;
+  color: #d24584;
+  background-color: #ffffff;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
-  color: #ffffff;
+  
   cursor: pointer;
   display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
