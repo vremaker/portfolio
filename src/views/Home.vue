@@ -62,7 +62,7 @@
     <!--PROJECTS --> 
     <div id="portfolio">
       <h2>My Projects!</h2>
-    <div id="projects" class="d-flex flex-wrap justify-content-around">
+    <div id="projects" class="d-flex flex-wrap justify-content-center">
       <div v-for="(tile) in tiles" 
         :key="tile.short-name"
         class="card">
@@ -72,7 +72,7 @@
           <p class="card-text">
            {{tile.description}}
           </p>
-          <router-link to="/DCI" class="button">View Project Details</router-link>
+          <router-link :to="'/'+ tile.short" @click="scrollToTop" class="button">View Project Details</router-link>
         </div>
       </div>
       </div>
@@ -93,6 +93,11 @@ export default {
     window.scrollTo(0,0);
 
   },
+  methods: { 
+            scrollToTop() {
+                window.scrollTo(0,0);
+            }
+        },
   data() {
     return {
       image: { backgroundImage: "url(assets/swoop.png)" },
@@ -161,8 +166,29 @@ export default {
 
 p {
   font-size: 12pt;
-
   font-family: "Raleway", sans-serif;
+}
+
+.card {
+  width: 500px;
+  text-align:center;
+  border-width: 2px;
+  border-color: #d24585;
+  margin: 5px;
+
+  img {
+    width: 50%;
+    padding-top: 1%;
+    margin:auto;
+  }
+  
+  .card-body {
+    padding-top: 0;
+  }
+
+  h2.card-title {
+    padding-top: 0 !important; 
+  }
 }
 
 .icon {
@@ -174,7 +200,12 @@ p {
 
 #portfolio {
   width: 90%;
+  min-height: 100vh;
   margin: auto;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items:center;
 
   h2 {
     text-align: center;
@@ -187,8 +218,8 @@ p {
 }
 
 .button {
-  color: #d24584;
-  background-color: #ffffff;
+  background-color: #d24584;
+  color: #ffffff;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
