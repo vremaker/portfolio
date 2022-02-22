@@ -60,7 +60,7 @@
     </div>
 
     <!--PROJECTS --> 
-    <div id="portfolio">
+    <div id="portfolio" ref="port">
       <h2>My Projects!</h2>
     <div id="projects" class="d-flex flex-wrap justify-content-center">
       <div v-for="(tile) in tiles" 
@@ -110,7 +110,7 @@ export default {
         },
         {
           short: "crochet-buddy",
-          name: "Crochet Buddy Prototyping",
+          name: "Prototyping Crochet Buddy",
           description:
             "Crochet Buddy is an Internet of Things (IoT) device created to assist novice crochet hobbyists in their pursuit of beautiful yarn-craft.",
         },
