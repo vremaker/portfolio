@@ -309,16 +309,23 @@
       <h4>Report a Hazard:</h4>
       <img src="/assets/night-owl/report.png" alt="report a hazard" />
       <p>
-        Having different icon categories and hazard types was confusing, but users still wanted hazards to be differentiated in some way. We made a few changes based on this feedback:
-        </p>
-        <ul>
-          <li>Removed different icon types and only allowed users to report hazards</li>
-          <li>Removed hazard types</li>
-          <li>Allowed users to enter a title for the hazard</li>
-          <li>Added hazard levels (low, medium, and high danger)</li>
-          </ul>
-        <h4>Call</h4>
-
+        Having different icon categories and hazard types was confusing, but
+        users still wanted hazards to be differentiated in some way. We made a
+        few changes based on this feedback:
+      </p>
+      <ul>
+        <li>
+          Removed different icon types and only allowed users to report hazards
+        </li>
+        <li>Removed hazard types</li>
+        <li>Allowed users to enter a title for the hazard</li>
+        <li>Added hazard levels (low, medium, and high danger)</li>
+      </ul>
+      <h4>Calling Safety Contact:</h4>
+      <img src="assets/night-owl/call.png" alt="calling a safety contact" /> 
+      <ul>
+        <li></li>
+      </ul>
     </div>
   </PortfolioPiece>
 </template>
