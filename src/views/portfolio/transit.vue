@@ -1,5 +1,13 @@
 <template>
   <PortfolioPiece>
+    <div>
+      <img class="sm-img" src="assets/tiles/transit.png" alt="transit screens" />
+      <h1></h1>
+      <p class="subhead">
+        
+        </p>
+        <h2></h2>
+    </div>
 </PortfolioPiece>
 </template>
 

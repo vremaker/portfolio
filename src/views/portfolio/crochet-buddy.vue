@@ -1,7 +1,6 @@
 <template>
   <PortfolioPiece>
     <h1>Prototyping Crochet Buddy</h1> 
-    <h3></h3>
 </PortfolioPiece>
 </template>
 

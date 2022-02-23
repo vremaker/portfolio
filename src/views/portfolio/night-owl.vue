@@ -5,7 +5,7 @@
         <img class="sm-img" src="/assets/tiles/night-owl.png" alt="DCI" />
       </div>
       <h1>Night Owl</h1>
-      <h2>Keeping Students Safe At Night</h2>
+      <p class="subhead" >Keeping Students Safe At Night</h3>
 
       <p>
         This project spanned 11 weeks in our HCDE 318 (Introduction to User

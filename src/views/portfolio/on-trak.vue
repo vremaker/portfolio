@@ -5,9 +5,9 @@
         <img class="sm-img" src="/assets/tiles/on-trak.png" alt="DCI" />
       </div>
       <h1>OnTrak Troubleshooting</h1>
-      <h2>
+      <p class="subhead">
         Empowering users to resolve product conflicts without calling for help
-      </h2>
+      </p>
 
       <p>
         During the Summer of 2021, I was given the wonderful opportunity to
