@@ -5,9 +5,9 @@
         <img class="sm-img" src="/assets/tiles/on-trak.png" alt="DCI" />
       </div>
       <h1>OnTrak Troubleshooting</h1>
-      <h3>
+      <h2>
         Empowering users to resolve product conflicts without calling for help
-      </h3>
+      </h2>
 
       <p>
         During the Summer of 2021, I was given the wonderful opportunity to
@@ -29,7 +29,7 @@
         permission, my design process was as follows:
       </p>
 
-      <h3>COMPETITIVE ANALYSIS</h3>
+      <h2>COMPETITIVE ANALYSIS</h2>
       <p>
         I began by gaining an understanding of competitive and comparable
         troubleshooting products, by looking at DCI’s own helpdesk site, DCI’s
@@ -46,7 +46,7 @@
         and include some gamified elements to make the troubleshooting
         interaction less tedious and frustrating.
       </p>
-      <h3>USER PERSONA</h3>
+      <h2>USER PERSONA</h2>
       <p>
         From the foundational information I was given regarding the drillers
         that typically work with the locating equipment, along with the baseline
@@ -58,7 +58,7 @@
 
       <img src="assets/on-trak/persona.png" alt="martin persona" />
 
-      <h3>WORKFLOW</h3>
+      <h2>WORKFLOW</h2>
       <p>
         The design for this onTrak application focused on the “No Data on
         Locator” troubleshooting flow provided by customer service.
@@ -85,7 +85,7 @@
         replacement or repair options.
       </p>
 
-      <h3>PROTOTYPE</h3>
+      <h2>PROTOTYPE</h2>
       <p>
         The final design for onTrak found inspiration from the iconic wordless
         instruction guides used by Ikea to guide users through the furniture
@@ -108,7 +108,7 @@
         src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqDKtN0o0pfNamUFKKiuBd4%2FonTrak-HiFi-Prototype%3Fnode-id%3D2%253A8209%26scaling%3Dscale-down%26page-id%3D2%253A1881%26starting-point-node-id%3D2%253A8209"
         allowfullscreen
       ></iframe>
-      <h3>USER TESTING</h3>
+      <h2>USER TESTING</h2>
       <p>
         After several iterations of prototyping, it was time to test the
         troubleshooting application with those who would be using it on the
@@ -144,7 +144,7 @@
         and what could be improved upon as shown below:
       </p>
 
-      <h4>What Worked:</h4>
+      <h3>What Worked:</h3>
       <ul>
         <li>Clean UI.</li>
         <li>Straightforward instructions that are nice and simple.</li>
@@ -156,7 +156,7 @@
         </li>
       </ul>
 
-      <h4>What Worked:</h4>
+      <h3>What Worked:</h3>
       <ul>
         <li>
           Testers would have liked a locator in their hands while testing (an
@@ -174,7 +174,7 @@
         </li>
       </ul>
 
-      <h3>REFLECTION</h3>
+      <h2>REFLECTION</h2>
       <p>
         This project was a lot of fun, it was an incredible learning opportunity
         for how to create mobile applications with a more gamified look and
