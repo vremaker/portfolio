@@ -37,4 +37,5 @@ export default {
   .body-cop {
     font-family: 'Raleway', sans-serif;
   }
+
 </style>

@@ -107,13 +107,13 @@ export default {
           name: "OnTrak Troubleshooting",
           description:
             "A simple, fun, and easy to use troubleshooting application designed to empower product users resolve common hardware issues without calling customer service for help.",
-        },
+        },/*
         {
           short: "crochet-buddy",
           name: "Prototyping Crochet Buddy",
           description:
             "Crochet Buddy is an Internet of Things (IoT) device created to assist novice crochet hobbyists in their pursuit of beautiful yarn-craft.",
-        },
+        },*/ 
         {
           short: "transit",
           name: "Emerald City Transit Redesign",
@@ -170,7 +170,7 @@ p {
 }
 
 .card {
-  width: 500px;
+  width: 400px;
   text-align:center;
   border-width: 2px;
   border-color: #d24585;
@@ -191,6 +191,14 @@ p {
   }
 }
 
+@media screen and (max-width: 912px) {
+
+.card {
+  width: 80%;
+  margin: auto;
+
+} 
+}
 .icon {
   width: 35px;
   height: 35px;

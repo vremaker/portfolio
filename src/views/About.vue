@@ -5,7 +5,7 @@
         cow
         d-flex
         justify-content-around
-        align-items-start align-items-lg-center
+        align-items-center align-items-lg-center
         mt-5 mt-lg-0
       "
     >
@@ -45,24 +45,19 @@
               to go into the field of User Experience Design. My goal is to
               create clean, fun, and intuitive designs through the
               implementation of both human centered design and psychological
-              principles. I also hope to implement positive psychology in my
-              designs to make the experience online healthier and less
-              addictive.
-              <br /><br />
-              During my time at The University of Washington, I have been
-              involved in a wide variety of undergraduate research projects in
-              both Psychology and HCDE. In the department of HCDE, I helped run
-              user centered design charrettes for K-12 students to introduce
-              them to the human centered design process; and assisted in
-              qualitative analysis of the impact that these charrettes have on
-              the college students that facilitate them. I also participated in
+              principles. 
+              </p>
+            <p>
+              I have been involved in a wide variety of undergraduate research projects in
+              both Psychology and HCDE. Currently, I help conduct
               qualitative research which analyzed TikTok videos from the Texas
               Energy Crisis to understand the role of social media in crisis
               responses. In the department of psychology, I helped collect data
               for a Virtual Reality study which investigated participants'
               reaction to different levels of immersion into simulated natural
               environments.
-              <br /><br />
+            </p>
+            <p>
               I also work as an Engineering Ambassador for the College of
               Engineering to help prospective students get excited about our
               engineering program. When I am not studying, I love to crochet,
@@ -122,25 +117,28 @@ export default {
 
 <style lang="scss" scoped>
 .cow {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hidden {
   display: none !important;
 }
 .small {
-  width: 50%;
+  width: 40%;
 }
 
 .large {
-  width: 50%;
+  width: 60%;
 }
 
 #text {
-  width: 70%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  width: 90%;
+  //padding-top: 5%; //potentially make padding responsive to lg v. md
+  //padding-bottom: 5%;
+}
+
+#text-box {
+  padding-top: 50px;
 }
 
 .image {
