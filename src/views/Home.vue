@@ -59,7 +59,6 @@
       </div>
     </div>
 
-    <!--PROJECTS --> 
     <div id="portfolio" ref="port">
       <h2>My Projects!</h2>
     <div id="projects" class="d-flex flex-wrap justify-content-center">
@@ -89,11 +88,17 @@ export default {
   components: {
     WithNav,
   },
-  created () {
-    window.scrollTo(0,0);
 
+created() {
+    window.addEventListener("scroll", this.handleScroll);
   },
-  methods: { 
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll(event) {
+      
+    },
             scrollToTop() {
                 window.scrollTo(0,0);
             }
@@ -146,7 +151,7 @@ export default {
 
 <style lang="scss" scoped>
 #landing {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #d24584;
   background-repeat: no-repeat;
   background-size: cover;

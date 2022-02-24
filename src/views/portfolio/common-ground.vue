@@ -96,34 +96,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-.cow {
-  width: 100%;
-  display: flex;
-}
-.sm-img {
-  width: 30%;
-  padding-top: 5%;
-  padding-bottom: 2%;
-  margin: auto;
-}
-
-.text {
-  text-align: center;
-}
-h2 {
-  text-align: left;
-}
-img {
-  width: 100%;
-  height: auto;
-  }
-
-em {
-  font-weight: 900;
-}
-
-#dci {
-  padding-bottom: 5%;
-}
-</style>

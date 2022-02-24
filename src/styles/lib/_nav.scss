@@ -3,6 +3,13 @@
     position:sticky;
 }
 
+.display {
+  font-family: 'Playfair Display', serif;
+}
+.body-cop {
+  font-family: 'Raleway', sans-serif;
+}
+
 @media (min-width: 992px) {
     .navbar-collapse {
       justify-content: flex-end;
