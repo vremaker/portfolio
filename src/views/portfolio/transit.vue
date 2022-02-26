@@ -1,15 +1,17 @@
 <template>
   <PortfolioPiece>
-    <div>
-      <div class="cow">
+     <div class="cover-img">
         <img
           class="sm-img"
           src="assets/tiles/transit.png"
           alt="transit screens"
         />
       </div>
-      <h1>Seattle Public Transit Brand Redesign</h1>
-      <p class="subhead">From Seattle Public Transit To Emerald City Transit</p>
+      <div class="title">
+        <h1>Seattle Public Transit Brand Redesign</h1>
+        <p class="subhead">From Seattle Public Transit To Emerald City Transit</p>
+        <hr />
+      </div>
       <p>
         As a project, in an advanced design class offered through the HCDE
         Department at The University of Washington, I redesigned Seattle Public
@@ -112,7 +114,7 @@
         src="https://docs.google.com/presentation/d/e/2PACX-1vSuMyi1mruFsmM0uAKm-q8twSFlh5YodbKU-cIheEAK3W4WVVzF2Wxgl2_z9mEyQKgbJaLn8LJ_9_9I/embed?start=false&loop=false&delayms=60000"
         frameborder="0"
         width="100%"
-        height="auto"
+        height="500"
         allowfullscreen="true"
         mozallowfullscreen="true"
         webkitallowfullscreen="true"
@@ -158,7 +160,6 @@
         be incredible for a public transit system because it is so whimsical and
         cities prefer a more clean, clear cut design.
       </p>
-    </div>
   </PortfolioPiece>
 </template>
 

@@ -1,12 +1,13 @@
 <template>
   <PortfolioPiece>
-    <div class="dci">
-      <div class="cow">
+      <div class="cover-img">
         <img class="sm-img" src="/assets/tiles/night-owl.png" alt="DCI" />
       </div>
-      <h1>Night Owl</h1>
-      <p class="subhead" >Keeping Students Safe At Night</p>
-
+      <div class="title">
+        <h1>Night Owl</h1>
+        <p class="subhead" >Keeping Students Safe At Night</p>
+        <hr />
+      </div>
       <p>
         This project spanned 11 weeks in our HCDE 318 (Introduction to User
         Centered Design) course, in Autumn 2019. As a team of 4, we applied the
@@ -93,7 +94,7 @@
         alt="the corner of 45th and University Ave in Seattle's University District"
       />
       <h3>Key Findings:</h3>
-      <ul>
+      <ul> 
         <li>Users were interacting with their phone in some way</li>
         <li>Users walking alone didn’t seem scared</li>
         <li>Many users wore earbuds</li>
@@ -101,6 +102,7 @@
       <a
         href="https://drive.google.com/file/d/1bnC4-I8SMbEtcSESTvVFnjK3JHV3tf9V/view"
         target="_blank"
+        class="yeet"
         >Find the full observation document here</a
       >
       <h2>COMPETITIVE ANALYSIS</h2>
@@ -534,7 +536,6 @@
         help the project excel.
       </p>
       <img class="mb-5" src="assets/night-owl/team.png" alt="the night owl team" />
-    </div>
   </PortfolioPiece>
 </template>
 

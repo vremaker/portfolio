@@ -1,12 +1,13 @@
 <template>
   <PortfolioPiece>
-    <div>
-      <div class="cow">
+      <div class="cover-img">
         <img class="sm-img" src="/assets/tiles/common-ground.png" alt="DCI" />
       </div>
-      <h1>Common Ground</h1>
-      <p class="subhead">People Over Politics</p>
-
+      <div class="title">
+        <h1>Common Ground</h1>
+        <p class="subhead">People Over Politics</p>
+        <hr />
+      </div>
       <p>
         For the 2020 HCDE Democracy Design Jam, a 24 hour virtual design sprint,
         my team wondered: In a country divided by politics and physical
@@ -83,7 +84,6 @@
         Lastly, we will implement a share function that will allow users to
         share a post to different social media platforms.
       </p>
-    </div>
   </PortfolioPiece>
 </template>
 

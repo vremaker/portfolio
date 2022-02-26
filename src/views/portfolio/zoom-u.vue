@@ -1,13 +1,16 @@
 <template>
   <PortfolioPiece>
-    <div class="cow">
+    <div class="cover-img">
       <img class="sm-img" src="assets/tiles/zoom-u.png" alt="zoom u" />
     </div>
-    <h1>The Virtual College Experience</h1>
-    <p class="subhead">
-      Understanding college student productivity and focus while learning from
-      home
-    </p>
+    <div class="title">
+      <h1>The Virtual College Experience</h1>
+      <p class="subhead">
+        Understanding college student productivity and focus while learning from
+        home
+      </p>
+     <hr />
+    </div>
     <h2>INTRODUCTION</h2>
     <p>
       The Novel Coronavirus Pandemic led to swift and disruptive changes to the

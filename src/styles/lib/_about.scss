@@ -1,0 +1,67 @@
+.cow {
+  min-height: 100vh;
+}
+
+.small {
+  width: 40%;
+}
+
+.large {
+  width: 60%;
+}
+
+#text {
+  width: 90%;
+  //padding-top: 5%; //potentially make padding responsive to lg v. md
+  //padding-bottom: 5%;
+}
+
+#text-box {
+  padding-top: 50px;
+}
+
+.image {
+  width: 60%;
+  height: auto;
+}
+
+#img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Raleway", san-serif;
+  font-size: 1em;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  #text-box {
+    width: 80%;
+    margin: auto;
+    h1 {
+      text-align: center;
+    }
+  }
+  .image {
+    width: 30%;
+  }
+  #text {
+    width: 100%;
+  }
+}

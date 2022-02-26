@@ -6,7 +6,10 @@ module.exports = {
       preProcessor: 'scss',
       patterns: []
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/portfolio/'
+  : '/'
 }
 
 module.exports = {

@@ -1,13 +1,15 @@
 <template>
   <PortfolioPiece>
-    <div id="dci">
-      <div class="cow">
+      <div class="cover-img">
         <img class="sm-img" src="/assets/tiles/on-trak.png" alt="DCI" />
       </div>
-      <h1>OnTrak Troubleshooting</h1>
-      <p class="subhead">
-        Empowering users to resolve product conflicts without calling for help
-      </p>
+      <div class="title">
+        <h1>OnTrak Troubleshooting</h1>
+        <p class="subhead">
+          Empowering users to resolve product conflicts without calling for help
+        </p>
+        <hr />
+      </div>
 
       <p>
         During the Summer of 2021, I was given the wonderful opportunity to
@@ -185,7 +187,6 @@
         simple, and clean UI will be a huge focus as I continue to design more
         applications.
       </p>
-    </div>
   </PortfolioPiece>
 </template>
 
