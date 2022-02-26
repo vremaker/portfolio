@@ -7,9 +7,7 @@ module.exports = {
       patterns: []
     }
   },
-  publicPath: process.env.NODE_ENV === 'production'
-  ? '/'
-  : '/'
+  publicPath: '//'
 }
 
 module.exports = {
