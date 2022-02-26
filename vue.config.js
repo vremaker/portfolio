@@ -4,17 +4,10 @@ module.exports = {
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'scss',
-      patterns: []
-    }
-  },
-  publicPath: '//'
-}
-
-module.exports = {
-  pluginOptions: {
-    "style-resources-loader": {
-      preProcessor: "scss",
       patterns: [path.resolve(__dirname, "./src/styles/global.scss")]
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/my-project/'
+  : '/'
 };
