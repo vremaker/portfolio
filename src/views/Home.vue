@@ -43,12 +43,12 @@
                 src="assets/linked.svg"
                 alt="Valerie Remaker's Linkedin"
             /></a>
-            <a href="https://www.instagram.com/valer_tree/" target="_blank"
+            <!--<a href="https://www.instagram.com/valer_tree/" target="_blank"
               ><img
                 class="icon"
                 src="assets/insta.svg"
                 alt="Valerie Remaker's Instagram"
-            /></a>
+            /></a> -->
             <a href="https://github.com/vremaker" target="_blank">
               <img
                 class="icon"
