@@ -1,8 +1,8 @@
 <template>
   <PortfolioPiece>
-      <div class="cover-img">
+     <!-- <div class="cover-img">
         <img class="sm-img" src="/assets/tiles/common-ground.png" alt="DCI" />
-      </div>
+      </div> -->
       <div class="title">
         <h1>Common Ground</h1>
         <p class="subhead">People Over Politics</p>

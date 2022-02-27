@@ -1,8 +1,8 @@
 <template>
   <PortfolioPiece>
-    <div class="cover-img">
+    <!--<div class="cover-img">
       <img class="sm-img" src="assets/tiles/zoom-u.png" alt="zoom u" />
-    </div>
+    </div>-->
     <div class="title">
       <h1>The Virtual College Experience</h1>
       <p class="subhead">

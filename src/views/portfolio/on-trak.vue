@@ -1,8 +1,8 @@
 <template>
   <PortfolioPiece>
-      <div class="cover-img">
+     <!-- <div class="cover-img">
         <img class="sm-img" src="/assets/tiles/on-trak.png" alt="DCI" />
-      </div>
+      </div>-->
       <div class="title">
         <h1>OnTrak Troubleshooting</h1>
         <p class="subhead">

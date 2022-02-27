@@ -1,12 +1,12 @@
 <template>
   <PortfolioPiece>
-     <div class="cover-img">
+    <!-- <div class="cover-img">
         <img
           class="sm-img"
           src="assets/tiles/transit.png"
           alt="transit screens"
         />
-      </div>
+      </div>-->
       <div class="title">
         <h1>Seattle Public Transit Brand Redesign</h1>
         <p class="subhead">From Seattle Public Transit To Emerald City Transit</p>
