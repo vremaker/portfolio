@@ -46,7 +46,7 @@ export default {
           short: "on-trak",
           name: "OnTrak Troubleshooting",
           description:
-            "A simple, fun, and easy to use troubleshooting application designed to empower product users resolve common hardware issues without calling customer service for help.",
+            "A simple, fun, and easy-to-use troubleshooting application designed to empower product users to resolve common hardware issues without calling customer service for help.",
         }, 
         /*
         {
@@ -78,7 +78,7 @@ export default {
           short: "zoom-u",
           name: "The Virtual College Experience",
           description:
-            "A qualitative research study which sought to answer the question: how do college students motivate and maintain productivity while learning from home?",
+            "A qualitative research study which sought to answer the question: how do college students get motivate and maintain productivity while learning from home?",
         },
       ],
     };
