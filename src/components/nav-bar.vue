@@ -32,7 +32,5 @@ export default {
 </script>
 
 <style scoped>
-b-navbar-brand {
-  position:fixed !important;
-}
+
 </style>
