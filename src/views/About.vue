@@ -18,7 +18,7 @@
         >
           <img
             class="image"
-            src="assets/val.png"
+            src="assets/val.jpeg"
             alt="A blonde girl standing in front of a colorful wall"
           />
         </div>
