@@ -25,7 +25,7 @@
         <img
           id="mobile"
           class="image mt-5"
-          src="assets/val.png"
+          src="assets/val.jpeg"
           alt="A blonde girl standing in front of a colorful wall"
         />
 
