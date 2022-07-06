@@ -17,29 +17,25 @@
           class="cow small d-flex justify-content-center align-items-center"
         >
           <img
-            class="image"
+            class="image rounded-circle"
             src="assets/val.jpeg"
             alt="A blonde girl standing in front of a colorful wall"
           />
         </div>
         <img
           id="mobile"
-          class="image mt-5"
+          class="image rounded-circle mt-5"
           src="assets/val.jpeg"
           alt="A blonde girl standing in front of a colorful wall"
         />
 
         <div id="text-box" class="large">
           <div id="text">
-            <h1>It's nice to meet you!</h1>
+            <h1 class="pt-0">It's nice to meet you!</h1>
             <p>
-              My name is Valerie Remaker and I am a Senior at The University of
-              Washington pursuing a double major in Human Centered Design &
-              Engineering (HCDE) and Psychology. I intend to use these degrees
-              to go into the field of User Experience Design. My goal is to
-              create clean, fun, and intuitive designs through the
-              implementation of both human centered design and psychological
-              principles. 
+              I'm Valerie Remaker and I graduated from The University of
+              Washington pursuing a double major in Human Centered Design and
+              Engineering (HCDE) and Psychology. During my time at The University of Washington, I have focused my studies on broad range of interests including UX Design, UX Research, and Software Development. I have cultivated my UX skills to be a flexible and versatile team player who can readily adapt to a variety of roles and can communicate effectively with all members of the product team.  
               </p>
             <p>
               I have been involved in a wide variety of undergraduate research projects in
@@ -52,10 +48,7 @@
               environments.
             </p>
             <p>
-              I also work as an Engineering Ambassador for the College of
-              Engineering to help prospective students get excited about our
-              engineering program. When I am not studying, I love to crochet,
-              and enjoy the natural world.
+              In my free time I love to crochet, and enjoy the natural world.
             </p>
           </div>
         </div>

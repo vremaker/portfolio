@@ -18,13 +18,15 @@
       >
         <div class="p-3">
           <h1>
-            Hi There, <br />
-            I'm Valerie Remaker
+            Hi There,
+            
+            I'm Valerie!
           </h1>
           <p>
-            I'm a senior studying Human Computer Interaction and Psychology at
-            The University of Washington. I am passionate about creating fun,
-            engaging, and interactive experiences for users.
+            I am a human centered designer with experience in UX research, UX
+            design, and software development. I am passionate about taking
+            complex problems in all disciplines and creating simple, intuitive,
+            and implementable solutions for all users.
           </p>
           <div id="connect" class="d-flex justify-content-center flex-row-wrap">
             <a href="mailto:vremaker@gmail.com" target="_blank">
@@ -73,7 +75,7 @@ export default {
   name: "Home",
   components: {
     WithNav,
-    PortfolioTile
+    PortfolioTile,
   },
 
   created() {

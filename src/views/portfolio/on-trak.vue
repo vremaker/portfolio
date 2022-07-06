@@ -1,93 +1,89 @@
 <template>
   <PortfolioPiece>
-     <!-- <div class="cover-img">
-        <img class="sm-img" src="/assets/tiles/on-trak.png" alt="DCI" />
-      </div>-->
+     <div class="cover-img d-flex flex-column">
+        <img class="header-img" src="/assets/tiles/on-trak.png" alt="DCI" />
       <div class="title">
         <h1>OnTrak Troubleshooting</h1>
-        <p class="subhead">
+        <p>
           Empowering users to resolve product conflicts without calling for help
         </p>
         <hr />
       </div>
+        </div>
 
       <p>
-        During the Summer of 2021, I was given the wonderful opportunity to
+        During the summer of 2021, I was given the opportunity to
         intern at Digital Control Inc. (DCI), a company that specializes in
-        locating technology for the horizontal directional drilling (HDD)
-        process. Their toolset helps drillers locate the drill head under the
-        ground through a two part hardware system consisting of a transmitting
-        device and a locating device. On these drill sites, users can encounter
-        complicated issues with their locating system, but these issues are
-        fairly common and the customer service department has documented
-        standardized procedures for troubleshooting these devices over the
-        phone. During my internship I was tasked with creating a troubleshooting
-        application that would not only reduce the call volume for customer
-        service representatives, but that would also empower users to resolve
+        locating technology for horizontal directional drilling (HDD). Their toolset 
+        tracks the location of the drillhead underground through a two part hardware system
+        consisting of a transmitter and a locator. These systems exhibit issues are
+        fairly common, and the customer service department has standardized procedures for 
+        troubleshooting over the phone. For this project, I was tasked with creating a 
+        troubleshooting application that would empower users to resolve
         product issues without having to call customer service for assistance.
-        My design specifically focused on the most common issue that needs
-        troubleshooting: when no data is showing up on the locator from the
-        transmitter that has been placed underground. With DCI’s gracious
-        permission, my design process was as follows:
+        My design focused on the most common issue "No Data on Locator", where the locator does not 
+        show the location information for the underground transmitter.
       </p>
 
-      <h2>COMPETITIVE ANALYSIS</h2>
+      <h2>Competitive Analysis</h2>
       <p>
-        I began by gaining an understanding of competitive and comparable
-        troubleshooting products, by looking at DCI’s own helpdesk site, DCI’s
-        current product manual/helpdesk mobile application, Apple’s helpdesk
-        site, Ford’s helpdesk site, and iFixIt’s crowdsourced troubleshooting
-        site. Most of these applications were extremely text heavy (especially
-        the help desk sites for Apple, Ford, and DCI), with links and subheads
-        as the main way to navigate through the content. The level of text is
-        incredibly overwhelming, and with hardware products, such as those
-        produced by DCI, it can be incredibly difficult for users to translate
-        what the text is trying to convey into concrete actions to be applied to
-        the hardware system. This competitive analysis made it clear that the
-        design needed to be far more visual, focus on single steps at one time,
-        and include some gamified elements to make the troubleshooting
-        interaction less tedious and frustrating.
+        To gain an understanding of the problem space, I began with competitive analysis. </p>
+        <b>Sites Analyzed</b>
+        <ul>
+          <li> DCI’s own helpdesk site</li>
+          <li> DCI’s current product manual/helpdesk mobile application</li>
+          <li> Apple’s helpdesk site</li> 
+          <li>Ford’s helpdesk site</li>
+          <li> iFixIt’s crowdsourced troubleshooting site </li>
+        </ul>
+        <b>Key Findings</b>
+        <ul>
+          <li> Current solutions tend to be overwhelmingly text heavy </li>
+          <li>Use links and subheadings as the main method of navigation </li>
+          <li>It can be difficult for users to translate text into concrete actions to be applied to
+        the hardware system</li>
+        </ul>
+        <b>Solution Implications</b>
+        <ul>
+          <li>More visual elements</li>
+          <li>Focus on one step at a time</li>
+          <li>Include gamification elements to reduce frustration</li>
+        </ul>
       </p>
-      <h2>USER PERSONA</h2>
+      <h2>User Persona</h2>
       <p>
         From the foundational information I was given regarding the drillers
-        that typically work with the locating equipment, along with the baseline
-        information about the technical problems that users run into when they
-        are in the field, I created the persona of Martin Dougherty. Martin is
-        new to drilling, in order to ensure that even the most inexperienced
-        drillers can still succeed using this troubleshooting application.
+        that typically work with the locating equipment, I created the persona 
+        of Martin Dougherty. As user's gain experience on the drillsite, troubleshooting 
+        becomes more intuitive, so my persona, Martin needed to be new to drilling to ensure that 
+        the solution is digestible at all skill levels. 
       </p>
 
       <img src="assets/on-trak/persona.png" alt="martin persona" />
 
-      <h2>WORKFLOW</h2>
+      <h2>Workflow</h2>
       <p>
-        The design for this onTrak application focused on the “No Data on
+        This application focused on the “No Data on
         Locator” troubleshooting flow provided by customer service.
-        Interestingly, in talking to various members of the customer service
-        support team and my various stakeholders, there seemed to be a slightly
-        modified path through the troubleshooting to get data back on the
-        locator, which conflicted with the flow chart I was given when I began
-        my internship. So, after consulting the head of customer service, I
+        In talking to stakeholdes and members of the customer service
+        support team, there seemed to be a variety of path to go about troubleshooting the same issue. 
+        After consulting the head of customer service, I
         created a finalized version of a workflow which displays all of the
-        possible paths that a user could encounter while trying to troubleshoot
-        getting data back on their locator.
+       paths a user could take while they troubleshoot their locator.
       </p>
       <img
         src="assets/on-trak/workflow.png"
         alt="flow through steps in the app"
       />
       <p>
-        Although there are a lot of possible steps to go through, this process
-        begins with verifying the equipment in use, and uses a decision tree to
+        This process begins with verifying the equipment in use, and uses a decision tree to
         walk through possible fixes that the user can try on their own until
         either their problem is solved, and they can get back to drilling, or
         they diagnose that their issue is too complicated to fix on their own,
         and requires contact with DCI to deal with rare, more complicated
         replacement or repair options.
       </p>
-
-      <h2>PROTOTYPE</h2>
+      <h2>Prototype</h2>
       <p>
         The final design for onTrak found inspiration from the iconic wordless
         instruction guides used by Ikea to guide users through the furniture
@@ -103,13 +99,7 @@
       </p>
       <p>Use the prototype below to explore the interactions for yourself!</p>
 
-      <iframe
-        style="border: 1px solid rgba(0, 0, 0, 0.1)"
-        width="100%"
-        height="400"
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqDKtN0o0pfNamUFKKiuBd4%2FonTrak-HiFi-Prototype%3Fnode-id%3D2%253A8209%26scaling%3Dscale-down%26page-id%3D2%253A1881%26starting-point-node-id%3D2%253A8209"
-        allowfullscreen
-      ></iframe>
+      <iframe SameSite=None style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOv0FRMitxrKGHictBHTxMe%2FonTrak-(Copy)%3Fpage-id%3D2%253A1881%26node-id%3D2%253A1881%26viewport%3D520%252C291%252C0.1%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A8209" allowfullscreen></iframe>
       <h2>USER TESTING</h2>
       <p>
         After several iterations of prototyping, it was time to test the
@@ -187,6 +177,13 @@
         simple, and clean UI will be a huge focus as I continue to design more
         applications.
       </p>
+  <div class="d-flex flex-column flex-md-row text-center justify-content-between">
+        <router-link to="/fin-lit"><b>Previous Project: </b> Chime Financial Literacy</router-link>
+        <router-link to="/transit"><b>Next Project: </b>Common Ground</router-link>
+        
+        </div>
+
+        
   </PortfolioPiece>
 </template>
 
@@ -199,3 +196,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.small {
+  width:5%;
+}
+</style>

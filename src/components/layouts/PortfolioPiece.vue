@@ -2,7 +2,9 @@
     <div>
         <Nav class="mb-5"/>
         <div class="article">
-            <slot></slot>
+            <div class="text">
+                <slot></slot>
+            </div>
         </div>
     </div>
 </template>
@@ -10,6 +12,7 @@
 <script> 
     import Nav from '@/components/nav-bar.vue'
     export default {
+       
         components: {
             Nav,
         },

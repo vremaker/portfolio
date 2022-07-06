@@ -84,6 +84,11 @@
         Lastly, we will implement a share function that will allow users to
         share a post to different social media platforms.
       </p>
+       <div class="d-flex flex-column flex-md-row text-center justify-content-between">
+        <router-link to="/on-trak"><b>Previous Project: </b> OnTrak Troubleshooting</router-link>
+        <router-link to="/crochet-buddy"><b>Next Project: </b>Crochet Buddy</router-link>
+        
+        </div>
   </PortfolioPiece>
 </template>
 

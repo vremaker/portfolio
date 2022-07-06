@@ -459,6 +459,9 @@
       <li><a href="https://drive.google.com/file/d/1ot7GZp_TIWPVzKMnI1_mj2Xi12gfOZSI/view" target="_blank">Kai Observation Field Notes</a></li>
       <li><a href="https://drive.google.com/file/d/1uvzPlP1w6cx2eboPBsJWAdNznIDPaail/view" target="_blank">The Final Report</a></li>
     </ul>
+     <div class="d-flex flex-column flex-md-row text-center justify-content-between">
+        <router-link to="/nature"><b>Previous Project: </b> Access to Nature and Crime</router-link> 
+        </div>
   </PortfolioPiece>
 </template>
 
