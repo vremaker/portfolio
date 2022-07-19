@@ -34,8 +34,11 @@
             <h1 class="pt-0">It's nice to meet you!</h1>
             <p>
               I'm Valerie Remaker and I graduated from The University of
-              Washington pursuing a double major in Human Centered Design and
-              Engineering (HCDE) and Psychology. During my time at The University of Washington, I have focused my studies on broad range of interests including UX Design, UX Research, and Software Development. I have cultivated my UX skills to be a flexible and versatile team player who can readily adapt to a variety of roles and can communicate effectively with all members of the product team.  
+              Washington pursuing a double degree in Human Centered Design and
+              Engineering (HCDE) and Psychology. During my time at The University of Washington, I focused my studies 
+              on a broad range of interests including UX Design, UX Research, and Software Development. 
+              I have cultivated my UX skills to be a flexible and versatile team player who can readily 
+              adapt to a variety of roles and can communicate effectively with all members of the product team.  
               </p>
             <p>
               I have been involved in a wide variety of undergraduate research projects in
@@ -48,7 +51,7 @@
               environments.
             </p>
             <p>
-              In my free time I love to crochet, and enjoy the natural world.
+              In my free-time I love to crochet and enjoy the natural world.
             </p>
           </div>
         </div>

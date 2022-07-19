@@ -12,17 +12,7 @@
         </div>
 
       <p>
-        During the summer of 2021, I was given the opportunity to
-        intern at Digital Control Inc. (DCI), a company that specializes in
-        locating technology for horizontal directional drilling (HDD). Their toolset 
-        tracks the location of the drillhead underground through a two part hardware system
-        consisting of a transmitter and a locator. These systems exhibit issues are
-        fairly common, and the customer service department has standardized procedures for 
-        troubleshooting over the phone. For this project, I was tasked with creating a 
-        troubleshooting application that would empower users to resolve
-        product issues without having to call customer service for assistance.
-        My design focused on the most common issue "No Data on Locator", where the locator does not 
-        show the location information for the underground transmitter.
+       During the summer of 2021, I was given the opportunity to intern at Digital Control Inc. (DCI), a company that specializes in locating technology for horizontal directional drilling (HDD). Their tool set tracks the location of the drill head underground through a two part hardware system consisting of a transmitter and a locator. These systems exhibit issues are fairly common, and the customer service department has standardized procedures for troubleshooting over the phone. For this project, I was tasked with creating a troubleshooting application that would empower users to resolve product issues without having to call customer service for assistance. My design focused on the most common issue, "No Data on Locator", where the locator does not show the location information for the underground transmitter.
       </p>
 
       <h2>Competitive Analysis</h2>
@@ -54,8 +44,8 @@
       <p>
         From the foundational information I was given regarding the drillers
         that typically work with the locating equipment, I created the persona 
-        of Martin Dougherty. As user's gain experience on the drillsite, troubleshooting 
-        becomes more intuitive, so my persona, Martin needed to be new to drilling to ensure that 
+        of Martin Dougherty. As user's gain experience on the drill site, troubleshooting 
+        becomes more intuitive, so my persona, Martin, needed to be new to drilling to ensure that 
         the solution is digestible at all skill levels. 
       </p>
 
@@ -65,10 +55,10 @@
       <p>
         This application focused on the “No Data on
         Locator” troubleshooting flow provided by customer service.
-        In talking to stakeholdes and members of the customer service
+        In talking to stakeholders and members of the customer service
         support team, there seemed to be a variety of path to go about troubleshooting the same issue. 
         After consulting the head of customer service, I
-        created a finalized version of a workflow which displays all of the
+        created a finalized version of a workflow which displays all the
        paths a user could take while they troubleshoot their locator.
       </p>
       <img
@@ -85,17 +75,10 @@
       </p>
       <h2>Prototype</h2>
       <p>
-        The final design for onTrak found inspiration from the iconic wordless
-        instruction guides used by Ikea to guide users through the furniture
-        construction process. The main goal of this prototype was to be a clean,
-        pleasant, fun, and intuitive guide towards fixing any frustrating issues
-        which might occur on the job.
+        The final design for onTrak found inspiration from the iconic wordless instruction guides used by Ikea to guide users through the furniture construction process. The main goal of this prototype was to be a clean, pleasant, fun, and intuitive guide towards solving any frustrating issues which might occur on the job.
       </p>
       <p>
-        The high fidelity prototype allows you to walk through the multiple
-        pathways involved in this user driven problem solving process for the
-        “No Data on Locator” flow as the user is walked through a choose your
-        own adventure styled interaction.
+        The high-fidelity prototype allows you to walk through the multiple pathways involved in this user-driven problem-solving process for the “No Data on Locator” flow as the user is walked through a choose-your-own-adventure styled interaction.
       </p>
       <p>Use the prototype below to explore the interactions for yourself!</p>
 
@@ -108,16 +91,16 @@
         completely virtual.
       </p>
       <p>
-        <em>Participants: </em> We tested the high fidelity prototype with 11 in
+        <b>Participants: </b> We tested the high-fidelity prototype with 11 in
         house participants in the form of both field representatives, and
         customer service representatives.
       </p>
       <p>
-        <em>Purpose: </em> To gain perspective on the merit of the onTrak
+        <b>Purpose: </b> To gain perspective on the merit of the onTrak
         application based on those who work with customers daily.
       </p>
       <p>
-        <em>Task: </em> Users followed the steps in the workflow from selecting
+        <b>Task: </b> Users followed the steps in the workflow from selecting
         equipment and changing bands all the way through calibration.
       </p>
       <p>
@@ -144,7 +127,7 @@
         <li>Helps focus amid the large amounts of data on the locator.</li>
         <li>
           Diagrams are easier than trying to describe it over the phone.
-          Dummy-proof."
+          Dummy-proof.
         </li>
       </ul>
 
@@ -171,15 +154,15 @@
         This project was a lot of fun, it was an incredible learning opportunity
         for how to create mobile applications with a more gamified look and
         feel, which helps reduce the tedium in everyday life. Although most
-        sites that cover step by step instructions tend to have a long scrolling
+        sites that cover step-by-step instructions tend to have a long scrolling
         experience, the shift to small, quickly read pages hat users could swipe
         though shifted the experience to an entirely new level. This focus on
-        simple, and clean UI will be a huge focus as I continue to design more
+        simple, and clean UI will be a focus as I continue to design more
         applications.
       </p>
   <div class="d-flex flex-column flex-md-row text-center justify-content-between">
         <router-link to="/fin-lit"><b>Previous Project: </b> Chime Financial Literacy</router-link>
-        <router-link to="/transit"><b>Next Project: </b>Common Ground</router-link>
+        <router-link to="/common-ground"><b>Next Project: </b>Common Ground</router-link>
         
         </div>
 
@@ -199,6 +182,6 @@ export default {
 
 <style scoped>
 .small {
-  width:5%;
+  width: 5%;
 }
 </style>

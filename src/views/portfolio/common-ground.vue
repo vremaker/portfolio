@@ -60,7 +60,7 @@
       <img src="assets/common-ground/jane.jpeg" alt="Jane Persona" />
       <h2>PROTOTYPES</h2>
       <p>
-        We tested a Mid fidelity prototype with users. Based on their feedback,
+        We tested a Mid-fidelity prototype with users. Based on their feedback,
         we incorporated an authentication process into our app that allows users
         to sign in via other apps. This helps us to collect more accurate
         political data, while protecting the user’s anonymity.

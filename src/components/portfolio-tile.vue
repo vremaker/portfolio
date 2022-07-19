@@ -30,11 +30,11 @@ import WithNav from "@/components/layouts/WithNav";
 //"{'background-image':}"
 export default {
   name: "Home",
-  prop:['name'],
+  prop: ["name"],
   components: {
     WithNav,
   },
-  methods:     {
+  methods: {
     scrollToTop() {
       window.scrollTo(0, 0);
     },
@@ -46,15 +46,16 @@ export default {
         {
           short: "fin-lit",
           name: "Chime Financial Literacy",
-          description: "Empowering users to gain financial literacy skills that are applicable to their lives using their real financial data. Won an honorable mention for DEI during the UW HCDE Capstone Showcase",
-        }, 
+          description:
+            "An application that empowers users to gain financial literacy using their own financial data. Awarded The DEI and Ethics Award at The HCDE Capstone Showcase.",
+        },
         {
           short: "on-trak",
           name: "OnTrak Troubleshooting",
           description:
             "A simple, fun, and easy-to-use troubleshooting application designed to empower product users to resolve common hardware issues without calling customer service for help.",
-        }, 
-      /*
+        },
+        /*
         {
           short: "transit",
           name: "Emerald City Transit Redesign",
@@ -65,18 +66,19 @@ export default {
           short: "common-ground",
           name: "Common Ground",
           description:
-            "Common Ground focuses on uniting people rather than dividing them during a very this politically charged era of society. Finalist in the HCDE Democracy Design Jam.",
+            "Common Ground focuses on uniting people online in a climate of political division and isolation. This project was given an honorable mention at the Democracy Design Jam.",
         },
         {
           short: "crochet-buddy",
           name: "Crochet Buddy",
           description:
-            "Exploratory prototyping for Crochet Buddy: an Internet of Things (IoT) device created to assist novice crochet hobbyists in the pursuit of beautiful yarn-craft.",
+            "An exploration in prototyping for Crochet Buddy: an Internet of Things (IoT) device created to assist novice crochet hobbyists in the pursuit of beautiful yarn-craft.",
         },
         {
           short: "nature",
           name: "Access to Nature and Crime",
-          description: "A quantitative investigation into the potential impacts that having access to nature would have on crime rates aross the various neighborhoods within Seattle, Washington."
+          description:
+            "A quantitative investigation into the potential impacts that having access to nature would have on crime rates across the various neighborhoods within Seattle, Washington.",
         },
         /*{
           short: "night-owl",
@@ -88,7 +90,7 @@ export default {
           short: "zoom-u",
           name: "The Virtual College Experience",
           description:
-            "A qualitative research study which sought to answer the question: how do college students get motivate and maintain productivity while learning from home?",
+            "A qualitative research study which sought to answer the question: how do college students get motivated and maintain productivity while learning from home?",
         },
       ],
     };

@@ -23,7 +23,7 @@
             I'm Valerie!
           </h1>
           <p>
-            I am a human centered designer with experience in UX research, UX
+            I am a human-centered designer with experience in UX research, UX
             design, and software development. I am passionate about taking
             complex problems in all disciplines and creating simple, intuitive,
             and implementable solutions for all users.
