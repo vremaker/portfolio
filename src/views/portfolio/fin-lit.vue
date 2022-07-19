@@ -1,7 +1,7 @@
 <template>
   <PortfolioPiece>
-    <div class="cover-img d-flex flex-column">
-      <img src="/assets/tiles/fin-lit.png" alt="DCI" />
+    <!--<div class="cover-img d-flex flex-column">
+      <img src="/assets/tiles/fin-lit.png" alt="DCI" />-->
       <div class="title">
         <h1>Chime Financial Literacy</h1>
         <p>
@@ -10,7 +10,7 @@
         </p>
         <hr />
       </div>
-    </div>
+    <!--</div>-->
     <p>
       For the final project of my Human Centered Design and Engineering degree,
       my capstone team designed a financial literacy learning platform for

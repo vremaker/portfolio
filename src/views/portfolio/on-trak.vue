@@ -1,7 +1,8 @@
 <template>
   <PortfolioPiece>
-     <div class="cover-img d-flex flex-column">
+     <!--<div class="cover-img d-flex flex-column">
         <img class="header-img" src="/assets/tiles/on-trak.png" alt="DCI" />
+    -->
       <div class="title">
         <h1>OnTrak Troubleshooting</h1>
         <p>
@@ -9,7 +10,7 @@
         </p>
         <hr />
       </div>
-        </div>
+        <!--</div>-->
 
       <p>
        During the summer of 2021, I was given the opportunity to intern at Digital Control Inc. (DCI), a company that specializes in locating technology for horizontal directional drilling (HDD). Their tool set tracks the location of the drill head underground through a two part hardware system consisting of a transmitter and a locator. These systems exhibit issues are fairly common, and the customer service department has standardized procedures for troubleshooting over the phone. For this project, I was tasked with creating a troubleshooting application that would empower users to resolve product issues without having to call customer service for assistance. My design focused on the most common issue, "No Data on Locator", where the locator does not show the location information for the underground transmitter.

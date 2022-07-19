@@ -1,8 +1,8 @@
 <template>
   <PortfolioPiece>
-    <div class="cover-img d-flex flex-column">
+    <!--<div class="cover-img d-flex flex-column">
       <img class="small" src="/assets/tiles/nature.png" />
-
+    -->
       <div class="title">
         <h1>Access to Nature and Crime</h1>
         <p>
@@ -15,7 +15,7 @@
      
         <hr />
       </div>
-    </div>
+    <!--</div>-->
       
     <h2>Abstract</h2>
     <p>

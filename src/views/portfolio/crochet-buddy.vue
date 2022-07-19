@@ -1,8 +1,8 @@
 <template>
   <PortfolioPiece>
-    <div class="cover-img d-flex flex-column">
+    <!--<div class="cover-img d-flex flex-column">
       <img src="/assets/tiles/crochet-buddy.png" alt="DCI" />
-    </div>
+    </div>-->
     <div class="title">
       <h1>Crochet Buddy</h1>
       <p>
