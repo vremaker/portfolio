@@ -13,14 +13,11 @@
     </div>
     <hr />
     <p>
-      In the Spring of 2020, around the start of the Novel Coronavirus Pandemic
-      that caused countries to shut down, I took up the art of crochet to fill
-      the days in isolation. Due to my inability to count my stitches correctly
-      in each of the rows I completed, the first blanket I made came out as more
-      of a trapezoid than a rectangle. The other big issue that most novice
-      crochet hobbyists is keeping a consistent tension in the amount that you
-      pull on the yarn to create each stitch. Crochet Buddy is an Internet of
-      Things (IoT) device created to assist novice crochet hobbyists in their
+      In the Spring of 2020, near the start of the Novel Coronavirus Pandemic,
+      I took up the art of crochet to fill the days. My earlier projects ended up 
+      lopsided due to the difficulty I faced tracking stitches. To address this 
+      problem, I designed Crochet Buddy is an Internet of Things (IoT) device 
+      created to assist novice crochet hobbyists in their
       pursuit of beautiful yarn-craft. This project consisted of exploration in:
       analog prototyping, 3D modeling, Voice User Interface, and AI stitch
       tracking.
@@ -33,15 +30,14 @@
 
     <h2>Design Overview</h2>
     <p>
-      The Crochet Buddy is a fairly simple IoT device with a large impact on
-      those who crochet. The physical device has three main components: an
-      ergonomic handle, a camera facing the crochet hook’s neck, which counts
-      the number of stitches and tracks which type of stitches are being made
-      using a machine learning algorithm. The hook also has a pressure sensitive
-      hook, which tracks the amount of force exerted each time the user pulls
-      for the stitch. The hook will also vibrate when the user should stop
-      pulling on the stitch, thus enforcing a consistent pull, making the
-      yarn-craft more consistent.
+      The Crochet Buddy is a simple IoT device with a large impact on
+      those who crochet. The physical device has two main components: an
+      ergonomic handle and a camera facing the crochet hook’s neck which counts
+      the number of stitches and tracks which type of stitches are being made. 
+      The hook also has a pressure sensitive hook, which tracks the amount of 
+      force exerted each time the user pulls on the stitch. The hook will 
+      also vibrate when the user should stop pulling on the stitch, thus 
+      enforcing a consistent pull, making the yarn-craft more consistent.
     </p>
     <iframe
       width="100%"

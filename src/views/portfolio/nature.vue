@@ -57,13 +57,15 @@
       accessibility of parks, as well as the quality of those parks, it is
       possible to gain a better understanding of their impact within the greater
       Seattle community.
-      <br /><br />
+    </p>
+    <p>
       This study seeks to work along a similar framework to the broken window
       thoery which uses the number of broken windows to guague the amount of
       crime - more broken windows incidates higher rates of crime (Koglmeier).
       But, instead of the number of broken windows, we will be using the number
       of parks, as well as the quality of those parks.
-      <br /><br />
+    </p>
+    <p>
       Across all of the literature that I reviewed, a key factor in the
       effectiveness of these parks and natural spaces - a key peice to making
       these public spaces effective is the need for a human centered approach
@@ -216,11 +218,13 @@
       Parks' chart, we have a mix of neighborhoods in which the percentage of
       crime is higher than the percentage of parks and vice versa. This means
       that there might potentially be an impact of parks on reducing crime.
-      <br /><br />
+    </p>
+    <p>
       The next two charts make the same comparison of percentages of crime and
       parks, but groups them together by whether there was a higher percentage
       of parks or a higher percentage of crime.
-      <br /><br />
+    </p>
+    <p>
       In this chart, we look at the neighborhoods where there are more parks.
     </p>
     <img
@@ -233,7 +237,8 @@
       is Seward park, which has 2.7% of the parks, but again, this could be due
       to the size of the area. We also see that most neighborhoods in this
       bracket have between 3% and 6% of the crime in Seattle.
-      <br /><br />
+    </p>
+    <p>
       In this chart, we look at the neighborhoods where there is more crime.
     </p>
     <img
@@ -246,7 +251,8 @@
       about 6% of the parks, and Queen Anne which has about 4% of parks. We also
       see that most neighborhoods have between 3% and 7% of the crime in
       Seattle.
-      <br /><br />
+    </p>
+    <p>
       There seems to be a slight difference here for the average range of crime
       when the number of parks is concerned. To look into this more deeply, we
       compared the average percentage of parks and crime across the conditions
@@ -303,7 +309,8 @@
       As you can see, there is not a whole lot of variation across these
       neighborhoods. The worst average park rating is 4.2 and the best rating is
       3.6.
-      <br /><br />
+    </p>
+    <p>
       Our final analysis seeks to compare the average park rating across all
       neighborhoods in the condition of having a higher percentage of crime than
       parks and having a higher percentage of parks than crime.
@@ -320,7 +327,8 @@
       average park rating is 3.3. There is a .6 difference in the average rating
       in which the areas with a higher percentage of parks tend to have overall
       higher quality parks
-      <br /><br />
+    </p>
+    <p>
       <em
         >This might indicate that parks in areas which there is less crime also
         have higher quality.
@@ -332,7 +340,8 @@
       This analysis seems to suggest an inverse correlational relationship
       between the number and quality of parks and crime rates. In this case,
       areas with more, higher quality parks see less crime.
-      <br /><br />
+    </p>
+    <p>
       <b>RQ1 asked Do areas with more greenspace have less crime? </b> We found
       that on average, areas with a higher percentage of parks had drastically
       less crime when compared to areas with higher percentages of crime that
@@ -401,13 +410,15 @@
       spaces due to the ways in which society has been developed. This research
       study sought to answer two questions: (1) Do areas with more greenspace
       have less crime? (2) Do areas with more greenspace have less crime?
-      <br /><br />
+    </p>
+    <p>
       For research question 1, it was hypothesized there will be less crime in
       areas with more greenspace. This hypothesis was confirmed when they study
       found that on average, areas with a higher percentage of parks had
       drastically less crime when compared to areas with higher percentages of
       crime that had an smaller assortment of parks.
-      <br /><br />
+    </p>
+    <p>
       For research question 2, it was hypothesized that having higher quality
       parks will be an indicator of less crime. This hypothesis ws confirmed
       when the study found that on average, areas with a higher percentage of
@@ -430,19 +441,23 @@
       Green Space and crime. Cornell College of Human Ecology. (n.d.). Retrieved
       May 11, 2022, from
       https://www.human.cornell.edu/dea/spotlights/green-space-and-crime
-      <br /><br />
+    </p>
+    <p>
       Koglmeier, E. (2017, July 31). Can public art reduce crime? expert
       interview with Ben Sandberg. Public Art Archive. Retrieved May 10, 2022,
       from
       https://www.publicartarchive.org/2017/07/31/can-public-art-reduce-crime-expert-interview/
-      <br /><br />
+    </p>
+    <p>
       Louv, R. (2005). Last child in the woods: Saving our children from
       nature-deficit disorder (pp. 1-36; 48-54). Chapel Hill, NC: Algonquin.
-      <br /><br />
+    </p>
+    <p>
       Ross, C. (n.d.). Examining the ways arts and culture intersect with public
       safety. Retrieved May 11, 2022, from
       https://www.urban.org/sites/default/files/publication/79271/2000725-Examining-the-Ways-Arts-and-Culture-Intersect-with-Public-Safety.pdf
-      <br /><br />
+    </p>
+    <p>
       Cover Image Courtesy of
       https://www.360cities.net/image/2018-uw-quad-cherry-blossoms-usa
     </p>
@@ -450,7 +465,6 @@
      <div class="d-flex flex-column flex-md-row text-center justify-content-between">
         <router-link to="/crochet-buddy"><b>Previous Project: </b> Crochet Buddy</router-link>
         <router-link to="/zoom-u"><b>Next Project: </b>The Virtual College Experience</router-link>
-        
         </div>
   </PortfolioPiece>
 </template>
