@@ -1,65 +1,25 @@
 <template>
   <WithNav>
-    <div
-      id="landing"
-      :style="image"
-      class="d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="
-          p-3
-          text-center
-          w-75
-          d-flex
-          justify-content-center
-          align-items-center
-        "
-        id="landing-info"
-      >
-        <div class="p-3">
-          <h1>
-            Hi There,
-            
-            I'm Valerie!
-          </h1>
-          <p>
-            I am a human-centered designer with experience in UX research, UX
-            design, and software development. I am passionate about taking
-            complex problems in all disciplines and creating simple, intuitive,
-            and implementable solutions for all users.
-          </p>
-          <div id="connect" class="d-flex justify-content-center flex-row-wrap">
-            <a href="mailto:vremaker@gmail.com" target="_blank">
-              <img
-                class="icon"
-                src="assets/email.svg"
-                alt="Email Valerie Remaker"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/valerie-remaker/"
-              target="_blank"
-            >
-              <img
-                class="icon"
-                src="assets/linked.svg"
-                alt="Valerie Remaker's Linkedin"
-            /></a>
-            <!--<a href="https://www.instagram.com/valer_tree/" target="_blank"
-              ><img
-                class="icon"
-                src="assets/insta.svg"
-                alt="Valerie Remaker's Instagram"
-            /></a> -->
-            <a href="https://github.com/vremaker" target="_blank">
-              <img
-                class="icon"
-                src="assets/github.svg"
-                alt="Valerie Remaker's Github"
-            /></a>
-          </div>
-        </div>
-      </div>
+    <div id="landing">
+<section class="hero-wrap js-fullheight" id="">
+		<!-- <div class="overlay"></div> -->
+		<div class="container-fluid px-0">
+			<div class="row  no-gutters slider-text align-items-center js-fullheight justify-content-end">
+
+				<img class="one-third js-fullheight align-self-end order-md-last img-fluid" src="images/test2.png"
+					alt="">
+				<div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
+					<div class="text mt-5">
+						<span class="subheading">Human Centered Designer</span>
+						<h1> Hi, I'm Valerie. </h1>
+						<p>I am a UX Designer based in Duvall, Washington with experience in UX research, UX design,
+							and software development. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
     </div>
 
     <PortfolioTile />
