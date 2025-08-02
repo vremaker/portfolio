@@ -1,64 +1,97 @@
 @use 'variables' as vars;
 
 #landing {
-  margin-top: -56px;
+    margin-top: -56px;
+    width: 100vw;
+    .image-container {
+        height: 90vh;
+    }
 }
 
 #landing img {
-    width: 100%;
+    width: 35%;
+    max-height: 80vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5rem;
 
     object-fit: contain;
 }
 
-#landing .row {
+#landing div {
     //background-color: green;
     height: 100vh;
 }
 
-#val-sketch {
- //   background-color: red;
-}
-.overlay-text, #val-sketch {
-   
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
+
 
 #landing .overlay-text {
     border-radius: 0;
+    margin: auto 5rem;
+
+    // padding-left: 2rem;
+    // padding-right: 8rem;
+    .text {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        height: 100vh;
+        max-width: 800px;
+    }
 }
+
 .subheading {
-    color: vars.$hello;
+    color: vars.$brand-pink;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#val-sketch {
+    object-fit: contain;
+    width: auto;
 }
 
 @media (max-width: 992px) {
-    .image-container {
-    position: relative; /* Establishes a positioning context */
-    display: inline-block; /* Shrink-wrap to image size */
+    #landing {
+        position: relative;
+        /* Establishes a positioning context */
+        display: inline-block;
+        /* Shrink-wrap to image size */
     }
 
-    .image-container img {
-    display: block;
-    // width: 100%;
-    height: auto;
+    #landing img {
+        display: block;
+        width: 95%;
+        margin: auto;
+        height: auto;
     }
 
     .overlay-text {
         height: 100vh;
-    position: absolute; /* Position relative to .image-container */
-    top: 0px;          /* Adjust distance from top */
-    left: 0px;         /* Adjust distance from left */
-    color: white;       /* Text color */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: translucent bg for readability */
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 3px;
+        position: absolute;
+        /* Position relative to .image-container */
+        top: 0px;
+        /* Adjust distance from top */
+        left: 0px;
+        /* Adjust distance from left */
+        color: white;
+        /* Text color */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Optional: translucent bg for readability */
+        padding: 5px 3rem;
+        text-align: center;
+        font-weight: bold;
+        margin: 0 auto !important;
+        // border-radius: 3px;
+
+
     }
-    #val-sketch img {
-        height: 95vh;
-        overflow-y: hidden;
-         margin-top: 40px;
-    // height: calc(100vh - 40px);
-    }
+
+    // #landing img {
+    //     height: 95vh;
+    //     width: 100% !important;
+    //     overflow-y: hidden;
+    //      margin-top: 40px;
+    // // height: calc(100vh - 40px);
+    // }
 }

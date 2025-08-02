@@ -1,11 +1,11 @@
 <template>
   <WithNav>
 <section class="" id="landing">
-
-		<div class="image-container container-fluid px-0">
-			<div class="row">
-			
-				<div class="overlay-text col-12 col-lg-6">
+ <div class="d-flex justify-content-around  px-0">
+			  <!-- <div id="val-sketch" class=""> -->
+        
+          <!-- </div> -->
+				<div class="overlay-text">
 					<div class="text mt-5">
 						<span class="subheading">Human Centered Designer</span>
 						<h1> Hi, I'm Valerie. </h1>
@@ -13,12 +13,30 @@
 							and software development. </p>
 					</div>
 				</div>
-        <div id="val-sketch" class="col-12 col-lg-6">
+        	<img  src="@/assets/test2.png"
+					alt="">
+      
+		
+		</div>
+
+		<!-- <div class="image-container container-fluid px-0">
+			<div class="row">
+        <div class="col-lg-1"></div>
+			  <div id="val-sketch" class="col-12 col-lg-4">
         	<img  src="@/assets/test2.png"
 					alt="">
           </div>
+				<div class="overlay-text col-12 col-lg-7">
+					<div class="text mt-5">
+						<span class="subheading">Human Centered Designer</span>
+						<h1> Hi, I'm Valerie. </h1>
+						<p>I am a UX Designer based in Duvall, Washington with experience in UX research, UX design,
+							and software development. </p>
+					</div>
+				</div>
+      
 			</div>
-		</div>
+		</div> -->
 	</section>
 
 
