@@ -1,23 +1,36 @@
 @use 'variables' as vars;
-#landing img {
-    height: 75vh;
 
-}
 #landing {
-    overflow-x: hidden;
+  margin-top: -56px;
 }
 
+#landing img {
+    width: 100%;
+
+    object-fit: contain;
+}
+
+#landing .row {
+    //background-color: green;
+    height: 100vh;
+}
+
+#val-sketch {
+ //   background-color: red;
+}
+.overlay-text, #val-sketch {
+   
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#landing .overlay-text {
+    border-radius: 0;
+}
 .subheading {
     color: vars.$hello;
 }
-//check classes 
-
-/**
-<div class="image-container">
-  <img src="your-image.jpg" alt="Background" />
-  <div class="overlay-text">This text is on top!</div>
-</div>
-*/
 
 @media (max-width: 992px) {
     .image-container {
@@ -41,5 +54,11 @@
     padding: 5px 10px;
     font-weight: bold;
     border-radius: 3px;
+    }
+    #val-sketch img {
+        height: 95vh;
+        overflow-y: hidden;
+         margin-top: 40px;
+    // height: calc(100vh - 40px);
     }
 }

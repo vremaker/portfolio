@@ -1,14 +1,11 @@
 <template>
   <WithNav>
-  
-    <div id="landing">
-<section class="hero-wrap js-fullheight" id="">
+<section class="" id="landing">
 
 		<div class="image-container container-fluid px-0">
-			<div class="">
-				<img class="" src="@/assets/test2.png"
-					alt="">
-				<div class="overlay-text">
+			<div class="row">
+			
+				<div class="overlay-text col-12 col-lg-6">
 					<div class="text mt-5">
 						<span class="subheading">Human Centered Designer</span>
 						<h1> Hi, I'm Valerie. </h1>
@@ -16,10 +13,13 @@
 							and software development. </p>
 					</div>
 				</div>
+        <div id="val-sketch" class="col-12 col-lg-6">
+        	<img  src="@/assets/test2.png"
+					alt="">
+          </div>
 			</div>
 		</div>
 	</section>
-  </div>
 
 
    

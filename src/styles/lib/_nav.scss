@@ -1,5 +1,5 @@
 .navbar {
-    background-color: white;
+    //background-color: white;
     width: 100vw;
     z-index: 4;
     padding: 0 1rem;
@@ -10,13 +10,26 @@
   font-weight: 700;
 }
 
-#nav-holder .nav-link {
+  @media (max-width: 992px) {
+    .navbar {
+      // background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+  }
 
+.sticky-target {
+  position: relative;
+  transition: all 0.3s ease;
+ 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   background-color : white !important; // try to remove that
 }
 
 
-  // @media (max-width: 992px) {
-  //   .navbar {
-  //     background-color: transparent !important;
-  //   }
-  // }
+

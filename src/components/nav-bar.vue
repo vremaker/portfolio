@@ -52,12 +52,11 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 .sticky-target {
   position: relative;
   transition: all 0.3s ease;
-  background: white;
+ 
 }
 
 .sticky {
@@ -66,6 +65,7 @@ export default {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   background-color : white !important; 
 }
 
 </style>
