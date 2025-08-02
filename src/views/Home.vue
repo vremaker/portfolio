@@ -1,14 +1,14 @@
 <template>
   <WithNav>
+  
     <div id="landing">
 <section class="hero-wrap js-fullheight" id="">
-		<!-- <div class="overlay"></div> -->
-		<div class="container-fluid px-0">
-			<div class="row  no-gutters slider-text align-items-center js-fullheight justify-content-end">
 
-				<img class="one-third js-fullheight align-self-end order-md-last img-fluid" src="images/test2.png"
+		<div class="image-container container-fluid px-0">
+			<div class="">
+				<img class="" src="@/assets/test2.png"
 					alt="">
-				<div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
+				<div class="overlay-text">
 					<div class="text mt-5">
 						<span class="subheading">Human Centered Designer</span>
 						<h1> Hi, I'm Valerie. </h1>
@@ -19,9 +19,10 @@
 			</div>
 		</div>
 	</section>
+  </div>
 
-    </div>
 
+   
     <PortfolioTile />
   </WithNav>
 </template>
@@ -38,17 +39,12 @@ export default {
     PortfolioTile,
   },
 
-  created() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
   methods: {
-    handleScroll(event) {},
+   
     scrollToTop() {
       window.scrollTo(0, 0);
     },
+    
   },
   data() {
     return {
@@ -91,7 +87,9 @@ export default {
             "A qualitative research study which sought to answer the question: how do college students motivate and maintain productivity while learning from home?",
         },
       ],
+      
     };
   },
 };
 </script>
+

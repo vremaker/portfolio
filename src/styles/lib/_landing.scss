@@ -1,0 +1,45 @@
+@use 'variables' as vars;
+#landing img {
+    height: 75vh;
+
+}
+#landing {
+    overflow-x: hidden;
+}
+
+.subheading {
+    color: vars.$hello;
+}
+//check classes 
+
+/**
+<div class="image-container">
+  <img src="your-image.jpg" alt="Background" />
+  <div class="overlay-text">This text is on top!</div>
+</div>
+*/
+
+@media (max-width: 992px) {
+    .image-container {
+    position: relative; /* Establishes a positioning context */
+    display: inline-block; /* Shrink-wrap to image size */
+    }
+
+    .image-container img {
+    display: block;
+    // width: 100%;
+    height: auto;
+    }
+
+    .overlay-text {
+        height: 100vh;
+    position: absolute; /* Position relative to .image-container */
+    top: 0px;          /* Adjust distance from top */
+    left: 0px;         /* Adjust distance from left */
+    color: white;       /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: translucent bg for readability */
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    }
+}
