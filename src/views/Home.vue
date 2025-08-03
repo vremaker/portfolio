@@ -8,7 +8,7 @@
 				<div class="overlay-text">
 					<div class="text mt-5">
 						<span class="subheading">Human Centered Designer</span>
-						<h1> Hi, I'm Valerie. </h1>
+						<h1> Hi, I'm Valerie <span id="cute">&#9829;</span> </h1>
 						<p>I am a UX Designer based in Duvall, Washington with experience in UX research, UX design,
 							and software development. </p>
 					</div>

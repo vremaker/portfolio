@@ -1,32 +1,39 @@
-
-@use 'variables' as vars;
+@use "variables" as vars;
 
 .navbar {
-    //background-color: white;
-    width: 100vw;
-    z-index: 4;
-    padding: 0 1rem;
+  width: 100vw;
+  z-index: 4;
+  padding: 0 1rem;
+}
+
+#cute {
+  font-size: 1em;
+  vertical-align: middle;
+  line-height: 1;
+
+ 
 }
 
 #nav-holder .navbar-brand {
-  
   font-weight: 700;
 }
 
-  @media (max-width: 992px) {
-    .navbar {
-      // background-color: rgba(0, 0, 0, 0.5) !important;
-    }
-
-    .navbar-brand {
-      color: white !important;
-    }
+#nav-holder .navbar-light {
+  .navbar-toggler {
+    // color: white;
+    border: none;
+    font-size: 30px;
   }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent; /* optional: remove visible border */
+  }
+}
 
 .sticky-target {
   position: relative;
   transition: all 0.3s ease;
- 
 }
 
 .sticky {
@@ -35,8 +42,29 @@
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   background-color : white !important; // try to remove that
+  // background-color: white !important; // try to remove that
 }
 
-
-
+@media (max-width: 992px) {
+  #nav-holder .navbar:not(.sticky) {
+    .navbar-brand {
+      color: white !important;
+    }
+    .navbar-toggler {
+      color: white;
+    }
+  }
+  // .navbar-brand {
+  //   color: white !important;
+  // }
+  #nav-holder .navbar:has(.navbar-collapse.show) {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .navbar-brand {
+      color: black !important;
+    }
+    .navbar-toggler {
+      color: black;
+    }
+  }
+}
