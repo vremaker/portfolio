@@ -1,20 +1,24 @@
 import { createApp } from 'vue';
+import {createBootstrap} from 'bootstrap-vue-next/plugins/createBootstrap';
 import App from './App.vue';
 import router from './router';
 import store from './store'; // remove if not using Vuex
 
- import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import * as bootstrap from 'bootstrap'; // Import Bootstrap JavaScript bundle
-
-
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
+// BootstrapVue 3
+import BootstrapVue3 from 'bootstrap-vue-3'
+import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import './styles/main.scss'; // your global styles
 
 const app = createApp(App);
 
 app.use(router); // Vue Router 4
+app.use(BootstrapVue3)
 app.use(store);  // Vuex 4 (optional)
 
 app.mount('#app');
+
 
 
 

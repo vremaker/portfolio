@@ -36,7 +36,7 @@
         flex-flow: column;
         justify-content: center;
         height: 100vh;
-        max-width: 800px;
+        max-width: 500px;
     }
 }
 
@@ -94,6 +94,11 @@
         margin: auto;
     }
 
+    .flex-landing {
+        //background-color: red;
+        display: flex;
+        justify-content: around;
+    }
     // #landing img {
     //     height: 95vh;
     //     width: 100% !important;

@@ -1,53 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
-
-// @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Lato:wght@300;400&display=swap');
-// @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,800;1,900&family=Lato:wght@100;300;400;700;800&display=swap');
+@use "@/styles/lib/_global"; 
+@use "@/styles/lib/_nav";
+@use "@/styles/lib/_portfolio";
+@use "@/styles/lib/_about";
+@use "@/styles/lib/_landing";
+//@use "@/styles/lib/_banner";
+// @use "@/styles/lib/_typography";
+// @use "@/styles/lib/_button";
+// @use "@/styles/lib/_form";
+// @use "@/styles/lib/_util";
+// @use "@/styles/lib/_card";
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-// -- Bootstrap [Required] --
-
-// @import "../../node_modules/bootstrap/scss/functions";
-// @import "../../node_modules/bootstrap/scss/variables";
-// @import "../../node_modules/bootstrap/scss/mixins";
-
-// // // -- Bootstrap [Overrides] --
-
-// //@import '@/styles/variables';
-
-// // // -- Bootstrap [Modules]
-
-// @import "../../node_modules/bootstrap/scss/reboot";
-// @import "../../node_modules/bootstrap/scss/grid";
-// @import "../../node_modules/bootstrap/scss/containers";
-// @import "../../node_modules/bootstrap/scss/utilities";
-// @import "../../node_modules/bootstrap/scss/utilities/api";
-// // @import "@/node_modules/bootstrap/scss/badge";
-// // @import "@/node_modules/bootstrap/scss/nav";
-// // @import "@/node_modules/bootstrap/scss/root";
-// // @import "@/node_modules/bootstrap/scss/progress";
-// @import "../../node_modules/bootstrap/scss/forms";
-// // @import "@/node_modules/bootstrap/scss/type";
-// // @import "@/node_modules/bootstrap/scss/alert";
-// // @import "@/node_modules/bootstrap/scss/tooltip";
 
 
 
 
-@import "@/styles/lib/_global"; 
-@import "@/styles/lib/_nav";
-@import "@/styles/lib/_portfolio";
-@import "@/styles/lib/_about";
-/*
-@import "@/styles/lib/_banner";
-@import "@/styles/lib/_typography";
-@import "@/styles/lib/_button";
-@import "@/styles/lib/_form";
-@import "@/styles/lib/_util";
-@import "@/styles/lib/_card";
-*/
 // --
 
-@import "@/styles/lib/_landing";
+//@import "@/styles/lib/_landing";
 

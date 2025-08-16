@@ -1,38 +1,43 @@
 <template>
   <div id="nav-holder">
-    <b-navbar
+    <BNavbar
       toggleable="lg"
       type="light"
       :class="{ sticky: isSticky }"
       ref="stickyElement"
       class="sticky-target"
     >
-      <b-navbar-brand href="#">Valerie Helen Grace Remaker </b-navbar-brand>
+      <BNavbarBrand href="#">Valerie Helen Grace Remaker </BNavbarBrand>
 
-      <b-navbar-toggle target="nav-collapse">
+      <BNavbarToggle target="nav-collapse">
          <span class="custom-toggler-icon">☰</span>
-      </b-navbar-toggle>
+      </BNavbarToggle> 
        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
   <span class="custom-toggler-icon">☰</span>
 </button> -->
 
-      <b-collapse
+     <BCollapse
         id="nav-collapse"
         class="d-flex-md justify-content-end"
         is-nav
       >
-        <b-navbar-nav>
-          <b-nav-item href="#">projects</b-nav-item>
-          <b-nav-item href="#">resume</b-nav-item>
-          <b-nav-item href="#">me</b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
+        <BNavbarNav>
+          <BNavItem href="#">projects</BNavItem>
+          <BNavItem href="#">resume</BNavItem>
+          <BNavItem href="#">me</BNavItem>
+        </BNavbarNav>
+     </BCollapse>
+    </BNavbar>
   </div>
 </template>
 
 <script>
+import { BNavbarToggle } from 'bootstrap-vue-3'
+import { BNavbarNav } from 'bootstrap-vue-next';
 export default {
+    components: {
+    BNavbarToggle
+  },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
