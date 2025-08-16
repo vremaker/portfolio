@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Nav class="mb-5"/>
+        <Nav class=""/>
         <div class="article">
             <div class="text">
                 <slot></slot>

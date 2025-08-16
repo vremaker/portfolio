@@ -1,5 +1,6 @@
 <template>
-  <WithNav>
+  <div id="cool">
+    <Nav/>
 <section class="" id="landing">
  <div class="d-flex justify-content-around  px-0">
 			  <!-- <div id="val-sketch" class=""> -->
@@ -42,18 +43,18 @@
 
    
     <PortfolioTile />
-  </WithNav>
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import PortfolioTile from "@/components/portfolio-tile";
-import WithNav from "@/components/layouts/WithNav";
+import Nav from "@/components/nav-bar";
 //"{'background-image':}"
 export default {
   name: "Home",
   components: {
-    WithNav,
+    Nav,
     PortfolioTile,
   },
 

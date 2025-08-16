@@ -42,7 +42,7 @@ export default {
       image: { backgroundImage: "url(assets/swoop.png)" },
       tiles: [
         {
-          short: "rules-optimizer",
+          short: "rules",
           name: "Optimal Blue Rules Optimizer",
           description: "Professional UX Case Study",
         },

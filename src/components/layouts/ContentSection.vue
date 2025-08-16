@@ -1,7 +1,10 @@
 <template>
     <div>
-        <Nav/>
-        <slot></slot>
+        <slot name="header"></slot>
+         <slot name="body"></slot>
+
+
+        <p> suck my toes</p>
     </div>
 </template>
 
@@ -9,11 +12,13 @@
     import Nav from '@/components/nav-bar.vue'
     export default {
         components: {
-            Nav,
+            Nav
         }
     }
 </script> 
 
 <style scoped>
+
+
 
 </style>

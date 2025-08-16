@@ -1,15 +1,20 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createStore } from 'vuex';
 
-Vue.use(Vuex)
-
-export default new Vuex.Store({
+export default createStore({
   state: {
+    message: 'Hello Vue 3 + Vuex 4',
   },
   mutations: {
+    setMessage(state, payload) {
+      state.message = payload;
+    },
   },
   actions: {
+    updateMessage({ commit }, payload) {
+      commit('setMessage', payload);
+    },
   },
-  modules: {
-  }
-})
+  getters: {
+    message: (state) => state.message,
+  },
+});

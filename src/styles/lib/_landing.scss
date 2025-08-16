@@ -81,10 +81,17 @@
         padding: 5px 3rem;
         text-align: center;
         font-weight: bold;
-        margin: 0 auto !important;
+        margin: auto !important;
+        width: 100vw;
+        max-width: 100vw;
+    
         // border-radius: 3px;
 
 
+    }
+
+    .text {
+        margin: auto;
     }
 
     // #landing img {
