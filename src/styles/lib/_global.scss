@@ -1,7 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
  --bs-body-font-family: 'Jost', sans-serif !important;
+ --text: #333333;
+ --chime-green: #2DE38E;
+ --dark-chime: #14A961;
 }
 
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem !important; 
+    font-weight: 600 !important; //come back to this 
+
+}
+
+.subhead {
+   font-weight: 300; 
+   font-size: 1.75rem;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text);
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1rem;
+}
 
 // #app { 
 //   min-height: 100%; 
