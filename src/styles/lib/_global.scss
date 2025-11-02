@@ -8,6 +8,15 @@
     --dusty-pink: #FAF0EE;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* 👈 prevents sideways scrollbars */
+    scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
 p {
     font-size: 1rem;
 }
@@ -95,3 +104,4 @@ h3 {
     grid-template-columns: repeat(1,1fr);
 }
 }
+

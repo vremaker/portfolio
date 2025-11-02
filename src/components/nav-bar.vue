@@ -4,11 +4,13 @@
       toggleable="lg"
       type="light"
       :class="{ sticky: isSticky }"
+      :style="{background: primaryColor}"
       ref="stickyElement"
       class="sticky-target"
     >
-      <BNavbarBrand href="">Valerie Helen Grace Remaker </BNavbarBrand>
-
+      <router-link to="/" @click="scrollToTop" class="button">
+          <BNavbarBrand href="">Valerie Helen Grace Remaker </BNavbarBrand>
+</router-link>  
       <BNavbarToggle target="nav-collapse">
          <span class="custom-toggler-icon">☰</span>
       </BNavbarToggle> 
@@ -34,12 +36,24 @@
 <script>
 import { BNavbarToggle } from 'bootstrap-vue-3'
 import { BNavbarNav } from 'bootstrap-vue-next';
+import { nextTick } from 'vue';
 export default {
     components: {
     BNavbarToggle
   },
-  mounted() {
+  mounted() { 
+    nextTick(()=>{
+      if(this.$route.path == "/fin-lit") {
+        this.headerColor = "#2de38e";
+     
+      } else if (this.$route.path == "/") {
+        this.headerColor = "#FAF0EE";
+      }
+      this.primaryColor = this.headerColor;
+    });
+   
     window.addEventListener("scroll", this.handleScroll);
+   
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll);
@@ -60,12 +74,22 @@ export default {
     },
     handleScroll() {
       this.isSticky = window.scrollY >= this.stickyOffset;
+      console.log(window.scrollY);
+      if(window.scrollY <= 600 && this.$route.path !== "/") {
+        this.primaryColor = this.headerColor;
+      } else if(this.$route.path === "/") {
+        this.primaryColor = this.headerColor;
+      }else {
+        this.primaryColor = "#ffffff";
+      }
     },
   },
   data() {
     return {
       isSticky: false,
       stickyOffset: 50,
+      primaryColor: '',
+      headerColor: '#2de38e',
     };
   },
 };
@@ -74,6 +98,7 @@ export default {
 .sticky-target {
   position: relative;
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .sticky {
@@ -82,7 +107,6 @@ export default {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: white !important;
 }
 </style>
 

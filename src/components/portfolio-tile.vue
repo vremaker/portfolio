@@ -38,6 +38,7 @@
   </div>
 </b-col>
 </b-row>
+<img src="../assets/line.png"/>
 </template>
 <script>
 // @ is an alias to /src
