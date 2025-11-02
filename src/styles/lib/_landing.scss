@@ -1,8 +1,10 @@
 @use 'variables' as vars;
 
 #landing {
-    margin-top: -56px;
+    //margin-top: -25px;
+    height: 100vh;
     width: 100vw;
+    background-color: var(--dusty-pink);
     .image-container {
         height: 90vh;
     }
@@ -13,7 +15,7 @@
     max-height: 80vh;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 5rem;
+    margin-left: 10rem;
 
     object-fit: contain;
 }

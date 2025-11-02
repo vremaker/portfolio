@@ -1,6 +1,5 @@
 <template>
   <PortfolioPiece>
-
     <section id="header">
       <b-row align-h="center">
         <b-col cols="8">
@@ -35,6 +34,7 @@
           class="shape-fill"></path>
       </svg>
     </div>
+     <carousel></carousel>
     <section id="story">
       <b-row align-h="center">
         <b-col cols="8">
@@ -127,7 +127,7 @@
               <p>One of the biggest barriers we observed was the lack of a stable income, especially for those still in school. Our interviews with older participants revealed similar insights about the consequences of neglecting financial literacy and provided valuable perspective on the struggles associated with debt, particularly among lower-income individuals.</p>
               <P>A turning point came when we interviewed a financial professor at UW, which deepened our understanding of financial literacy and informed our design decisions. On a personal note, this project encouraged me to talk to my dad about financial literacy for the first time. He was thrilled that I wanted to learn more, and I’m grateful that this project not only expanded my professional skills but also sparked a personal commitment to continue improving my financial literacy beyond this experience.</P>
             </section>
-
+           
         </b-col>
       </b-row>
     </section>
@@ -135,10 +135,11 @@
 </template>
 <script>
 import PortfolioPiece from "@/components/layouts/PortfolioPiece.vue";
-
+import carousel from "../../components/layouts/carousel.vue";
 export default {
   components: {
     PortfolioPiece,
+    carousel
   },
   data() {
     return {

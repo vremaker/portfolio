@@ -7,7 +7,7 @@
       ref="stickyElement"
       class="sticky-target"
     >
-      <BNavbarBrand href="#">Valerie Helen Grace Remaker </BNavbarBrand>
+      <BNavbarBrand href="">Valerie Helen Grace Remaker </BNavbarBrand>
 
       <BNavbarToggle target="nav-collapse">
          <span class="custom-toggler-icon">☰</span>

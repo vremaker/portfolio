@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
- --bs-body-font-family: 'Jost', sans-serif !important;
- --text: #333333;
- --chime-green: #2DE38E;
- --dark-chime: #14A961;
+    --bs-body-font-family: 'Jost', sans-serif !important;
+    --text: #333333;
+    --chime-green: #2DE38E;
+    --dark-chime: #14A961;
+    --dusty-pink: #FAF0EE;
 }
 
 p {
     font-size: 1rem;
 }
+a {
+    text-decoration: none;
+}
 
 h1 {
-    font-size: 3rem !important; 
+    font-size: 3rem !important;
     font-weight: 600 !important; //come back to this 
 
 }
 
 .subhead {
-   font-weight: 300; 
-   font-size: 1.75rem;
+    font-weight: 300;
+    font-size: 1.75rem;
 }
+
 h2 {
     font-size: 1.5rem;
     font-weight: 800;
@@ -32,59 +37,52 @@ h3 {
     font-size: 1rem;
 }
 
-// #app { 
-//   min-height: 100%; 
-// }
+.card-body {
+    background-color: pink;
+    text-align: left;
+    width: fit;
+    padding: 1rem 5rem 1rem 5rem;
+    text-decoration: none;
+}
 
-// p {
-//   font-size: 12pt;
-//   font-family: "Lato", sans-serif;
-// }
+.card-title {
+    
+    font-weight: 400;
+    font-size: 24px;
+}
 
-// .icon {
-//   width: 35px;
-//   height: 35px;
-//   margin-left: 10px;
-//   margin-right: 10px;
-// }
+#portfolio {
+ 
+    height: 100vh;
+  
+    margin: auto;
+      margin-top: 10rem;
+    h2 {
+        color: var(--text);
+        font-weight: 600;
+    }
+    }
 
-// .button {
-//   background-color: #d24584;
-//   color: #ffffff;
-//   border-radius: 8px;
-//   border-style: none;
-//   box-sizing: border-box;
-//   cursor: pointer;
-//   display: inline-block;
-//   font-family: "Lato", sans-serif;
-//   font-size: 14px;
-//   font-weight: 500;
-//   height: 40px;
-//   line-height: 20px;
-//   list-style: none;
-//   margin: 0;
-//   outline: none;
-//   padding: 10px 16px;
-//   position: relative;
-//   text-align: center;
-//   text-decoration: none;
-//   transition: color 100ms;
-//   vertical-align: baseline;
-//   user-select: none;
-//   -webkit-user-select: none;
-//   touch-action: manipulation;
-// }
 
-// .button:hover,
-// .button:focus {
-//   background-color: #f082ac;
-// }
 
-// .thumb {
-//   width: 20%;
-// }
 
-// .small {
-//   width: 5%;
-// }
 
+
+
+.card {
+    padding: 0;
+
+
+    img {
+        height: 15rem;
+        width: auto;
+        padding: 1.5rem;
+    }
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+}

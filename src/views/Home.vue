@@ -4,21 +4,23 @@
 <section class="" id="landing">
  <div class="d-flex justify-content-around  px-0">
 			  <!-- <div id="val-sketch" class=""> -->
-        
+        <img  src="../assets/gallery-frame.png"
+					alt="">
           <!-- </div> -->
 				<div class="overlay-text">
 					<div class="text mt-5">
-						<span class="subheading">Human Centered Designer</span>
-						<h1> Hi, I'm Valerie <span id="cute">&#9829;</span> </h1>
-						<p>I am a UX Designer based in Duvall, Washington with experience in UX research, UX design,
-							and software development. </p>
+					
+						<h1> Hi, I'm Valerie <span id="cute">✨</span> </h1>
+            	
+						<p>I’m a user experience designer based in the Seattle area. I’m passionate creating consistency using design systems and I love to use human centered design practices to solve complex problems. </p>
+              <span class="subheading">Human Centered Designer</span>
 					</div>
 				</div>
-        	<img  src="@/assets/test2.png"
-					alt="">
+        	
       
 		
 		</div>
+    
 
 		<!-- <div class="image-container container-fluid px-0">
 			<div class="row">
