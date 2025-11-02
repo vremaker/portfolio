@@ -1,5 +1,5 @@
 <template>
-  <WithNav>
+  <div>
     <div
       class="cow d-flex justify-content-around align-items-center align-items-lg-center
         mt-5 mt-lg-0">
@@ -57,15 +57,15 @@
         </div>
       </div>
     </div>
-  </WithNav>
+  </div>
 </template>
 
 <script>
-import WithNav from "@/components/layouts/WithNav.vue";
+
 
 export default {
   components: {
-    WithNav,
+
   },
   data() {
     return {

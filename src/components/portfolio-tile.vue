@@ -42,13 +42,12 @@
 </template>
 <script>
 // @ is an alias to /src
-import WithNav from "@/components/layouts/WithNav";
+
 //"{'background-image':}"
 export default {
   name: "Home",
   prop: ["name"],
   components: {
-    WithNav,
   },
   methods: {
     scrollToTop() {

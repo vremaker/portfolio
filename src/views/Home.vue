@@ -1,7 +1,7 @@
 <template>
   <div id="cool">
-    <Nav/>
-<section class="" id="landing">
+    <Nav :color="primaryColor" :textColor="red"/>
+<section :style="{backgroundColor: primaryColor}" id="landing">
  <div class="d-flex flex-column flex-lg-row justify-content-lg-around h-100 px-0">
 			  <!-- <div id="val-sketch" class=""> -->
         <img  src="../assets/gallery-frame.png"
@@ -16,30 +16,7 @@
               <span class="subheading">Human Centered Designer</span>
 					</div>
 				</div>
-        	
-      
-		
 		</div>
-    
-
-		<!-- <div class="image-container container-fluid px-0">
-			<div class="row">
-        <div class="col-lg-1"></div>
-			  <div id="val-sketch" class="col-12 col-lg-4">
-        	<img  src="@/assets/test2.png"
-					alt="">
-          </div>
-				<div class="overlay-text col-12 col-lg-7">
-					<div class="text mt-5">
-						<span class="subheading">Human Centered Designer</span>
-						<h1> Hi, I'm Valerie. </h1>
-						<p>I am a UX Designer based in Duvall, Washington with experience in UX research, UX design,
-							and software development. </p>
-					</div>
-				</div>
-      
-			</div>
-		</div> -->
 	</section>
 
 
@@ -69,7 +46,6 @@ export default {
   },
   data() {
     return {
-      image: { backgroundImage: "url(assets/swoop.png)" },
       tiles: [
         {
           short: "on-trak",
@@ -108,6 +84,7 @@ export default {
             "A qualitative research study which sought to answer the question: how do college students motivate and maintain productivity while learning from home?",
         },
       ],
+      primaryColor: "#FAF0EE"
       
     };
   },

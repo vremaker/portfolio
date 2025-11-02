@@ -1,40 +1,5 @@
 <template>
-  <PortfolioPiece>
-    <section id="header">
-      <b-row align-h="center">
-        <b-col cols="8">
-          <h1>Building Wealth with Chime</h1>
-          <p class="subhead">Empowering users to set financial goals and build practical financial literacy skills using
-            their own real-world financial data.</p>
-          <hr />
-
-          <b-row align-h="start">
-            <b-col cols="">
-              <p class="fw-bold">Role</p>
-              <p>UX Designer and Researcher</p>
-              <p>17 Months (2023-2025)</p>
-            </b-col>
-            <b-col cols="3">
-              <p class="fw-bold">Tools</p>
-              <p>Figma, G-Suite, Slack, Virtual Sticky Notes</p>
-            </b-col>
-            <b-col cols="5">
-              <p class="fw-bold">Team</p>
-              <p>Valerie Remaker, Katia Meuleman, Aiza Ali, Brisa Jimenez</p>
-            </b-col>
-          </b-row>
-
-        </b-col>
-      </b-row>
-    </section>
-    <div class="custom-shape-divider-top-1761616648">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-          class="shape-fill"></path>
-      </svg>
-    </div>
-     <carousel></carousel>
+  <PortfolioPiece :title="headerDetails.title" :color="headerDetails.color" :subtitle="headerDetails.subtitle" :role="headerDetails.role" :timeline="headerDetails.timeline" :tools="headerDetails.tools" :team="headerDetails.team" :accentColor="headerDetails.accentColor"  >
     <section id="story">
       <b-row align-h="center">
         <b-col cols="8">
@@ -48,8 +13,8 @@
               to
               paycheck which we defined as an income of $75,000 a year. </p>
           </section>
-          <section id="question">
-            <h1 class="accent">How can we help Chime users build wealth in an easy, fun, and accessible way?</h1>
+          <section id="question">   
+            <h1 :style="{color: '#14a961'}">How can we help Chime users build wealth in an easy, fun, and accessible way?</h1>
             <p class="fw-light">Design Question</p>
           </section>
           <section id="reserach">
@@ -87,7 +52,7 @@
             <h2>Meet Our Users</h2>
             <p>Everyone deserves the opportunity to build wealth. Our personas and user journey maps serve as reminders to keep people from all walks of life at the center of our design and decision-making.</p>
             <!--- COME BACK AND MAKE THESE OPEN INTO A  SLIDEY FULL SCREEN-->
-            <div class="d-flex flex-row w-100">
+            <!-- <div class="d-flex flex-row w-100">
               
             <img src="../../../public/assets/fin-lit/laura.png" />
              <img src="../../../public/assets/fin-lit/mark.png" />
@@ -95,7 +60,7 @@
             <div  class="d-flex flex-row w-100">
                   <img  src="../../../public/assets/fin-lit/laura_jm.png" />
                  <img src="../../../public/assets/fin-lit/mark_jm.png" />
-            </div>
+            </div> -->
             </section>
             <section id="define">
               <h2>What do Our Users Need?</h2>
@@ -109,15 +74,15 @@
               </ul>
               <h3>What is the best format for our tool? </h3>
               <p>Finances are a deeply personal topic and often occupy people’s thoughts throughout the day, no matter where they are. We envisioned our users in various on-the-go situations where they might have quick financial questions and need immediate, reliable answers. This insight led us to develop a mobile app.</p>
-              <img class="w-100" src="../../../public\assets\fin-lit\storyboards.png" />
+              <!-- <img clkass="w-100" src="../../../public\assets\fin-lit\storyboards.png" /> -->
             </section>
             <section id="design">
               <h2>The Design Process</h2>
             </section>
             <section id="future">
               <h2>Future State</h2>
-              <P>Over the course of our project, our design ideas evolved significantly as we went through multiple iterations and transitions. One of the biggest areas for growth we identified in our final product was the quality and depth of the lessons. To further develop these lessons and improve their impact, an important next step would be to focus on UX writing and content strategy. This would help us present financial literacy content to users in a clearer, more engaging, and user-friendly way. While the material we included was helpful, we recognized that the presentation could be cleaner and more cohesive.</p>
-              <P>We concluded the project with a user testing session. Although users gave us generally positive feedback, they also provided valuable insights that could guide future improvements. One feature I’m most excited about is displaying the amount of money a user has contributed toward their goal at the top of the goal details page. This visual progress indicator can help motivate users to continue working toward their financial goals.</p>
+              <p>Over the course of our project, our design ideas evolved significantly as we went through multiple iterations and transitions. One of the biggest areas for growth we identified in our final product was the quality and depth of the lessons. To further develop these lessons and improve their impact, an important next step would be to focus on UX writing and content strategy. This would help us present financial literacy content to users in a clearer, more engaging, and user-friendly way. While the material we included was helpful, we recognized that the presentation could be cleaner and more cohesive.</p>
+              <p>We concluded the project with a user testing session. Although users gave us generally positive feedback, they also provided valuable insights that could guide future improvements. One feature I’m most excited about is displaying the amount of money a user has contributed toward their goal at the top of the goal details page. This visual progress indicator can help motivate users to continue working toward their financial goals.</p>
               <p>Another key takeaway from testing was the need to refine the layout of our lessons. While the content itself was strong, the interface could benefit from more color, interactivity, and a reduction in text density to make the experience more engaging and approachable.</p>
                 <p>If we were to continue developing this project, we would aim to design additional screens and user flows to enhance the learning experience—such as prototyping savings, budgeting, and custom goal flows, along with expanding the content within the skill builder section. Naturally, this would be followed by further rounds of user testing and iteration, particularly with users living paycheck to paycheck, to ensure our product truly meets their needs.</p>
               </section>
@@ -125,7 +90,7 @@
               <h2>Reflection</h2>
               <p>This capstone project was a great learning experience. At the start, I was nervous about designing for financial literacy since I didn’t have much knowledge of the topic myself. During the interview process, we discovered that many of our intended users had similar levels of financial literacy awareness, which helped us empathize with their challenges.</p>
               <p>One of the biggest barriers we observed was the lack of a stable income, especially for those still in school. Our interviews with older participants revealed similar insights about the consequences of neglecting financial literacy and provided valuable perspective on the struggles associated with debt, particularly among lower-income individuals.</p>
-              <P>A turning point came when we interviewed a financial professor at UW, which deepened our understanding of financial literacy and informed our design decisions. On a personal note, this project encouraged me to talk to my dad about financial literacy for the first time. He was thrilled that I wanted to learn more, and I’m grateful that this project not only expanded my professional skills but also sparked a personal commitment to continue improving my financial literacy beyond this experience.</P>
+              <p>A turning point came when we interviewed a financial professor at UW, which deepened our understanding of financial literacy and informed our design decisions. On a personal note, this project encouraged me to talk to my dad about financial literacy for the first time. He was thrilled that I wanted to learn more, and I’m grateful that this project not only expanded my professional skills but also sparked a personal commitment to continue improving my financial literacy beyond this experience.</P>
             </section>
            
         </b-col>
@@ -143,71 +108,21 @@ export default {
   },
   data() {
     return {
-      full: false
+      full: false,
+      headerDetails: {
+        title: "Building Wealth With Chime",
+        subtitle: "Empowering users to set financial goals and build practical financial literacy skills using their own real-world financial data.",
+        role: "UX Designer and Researcher",
+        timeline: "12 Months (2021-2022)",
+        tools: "Figma, G-Suite, Slack, Virtual Sticky Notes",
+        team : "Valerie Remaker, Katia Meuleman, Aiza Ali, Brisa Jimenez",
+        color: "#2DE38E",
+        accentColor: '#333333'
     }
+  }
   },  
   methods: {
   }
 };
 
 </script>
-<style scoped style="scss">
-#header {
-
-  padding-top: 10rem;
-  padding-bottom: 5rem;
-  background: var(--chime-green);
-
-}
-
-#story section {
-  margin-bottom: 8px;
-}
-#header p:not(.subhead) {
-  margin-bottom: .05rem;
-  font-size: 1rem;
-  font-weight: 400;
-}
-img {
-  width: 50%;
-  height: auto;
-
-}
-
-img .fullImg {
-  width: 100%;
-}
-#story {
-  padding-top: 3rem;
-}
-
-.custom-shape-divider-top-1761616648 {
-  bottom: -5;
-
-  width: 100%;
-
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1761616648 svg {
-  position: relative;
-  display: block;
-  width: calc(149% + 1.3px);
-  height: 100px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1761616648 .shape-fill {
-  fill: var(--chime-green);
-}
-
-.accent {
-  font-size: 2.5rem !important;
-  color: var(--dark-chime);
-}
-
-em {
-  font-weight: 500;
- font-style: normal;
-}
-</style>

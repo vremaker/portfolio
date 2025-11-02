@@ -66,6 +66,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/nature.vue')
   },
   {
+    path: '/design-system',
+    name: 'A Unified PPE Experience',
+    component: () => import('../views/portfolio/design-system.vue')
+  },
+  {
     path: '/common-ground',
     name: 'Common Ground',
     // route level code-splitting
