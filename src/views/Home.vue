@@ -2,13 +2,13 @@
   <div id="cool">
     <Nav/>
 <section class="" id="landing">
- <div class="d-flex justify-content-around  px-0">
+ <div class="d-flex flex-column flex-lg-row justify-content-lg-around h-100 px-0">
 			  <!-- <div id="val-sketch" class=""> -->
         <img  src="../assets/gallery-frame.png"
 					alt="">
           <!-- </div> -->
 				<div class="overlay-text">
-					<div class="text mt-5">
+					<div class="text">
 					
 						<h1> Hi, I'm Valerie <span id="cute">✨</span> </h1>
             	
