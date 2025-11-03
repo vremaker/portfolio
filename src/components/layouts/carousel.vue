@@ -1,57 +1,54 @@
 <template>
-<div>
-<BCarousel
-  controls
-  indicators
->
-  <BCarouselSlide img-src="https://picsum.photos/1024/480/?image=40">
-    <h1>First slide</h1>
-    <p>Some more detailed description or whatever content.</p>
-  </BCarouselSlide>
-  <BCarouselSlide
-    caption="Second slide"
-    text="Does the same, just a bit differently."
-    img-src="https://picsum.photos/1024/480/?image=41"
-  />
-  <BCarouselSlide>
-    <template #img>
-      <BImg
-        width="1024"
-        height="480"
-        src="https://picsum.photos/1024/480/?image=42"
-        alt="image slot"
-      />
-    </template>
-    <h1>Third slide</h1>
-    <p>Constains a customized background image</p>
-  </BCarouselSlide>
-  <BCarouselSlide
-    img-width="1024"
-    img-height="480"
-    img-blank
-    img-blank-color="pink"
-    img-alt="Blank image"
-  >
-    <h1>Fourth slide</h1>
-    <p>No background image</p>
-  </BCarouselSlide>
-</BCarousel>
+  <div class="container mt-4">
+    <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../assets/logo.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../assets/logo.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../assets/logo.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+    </div>
 </template>
 
 <script>
+import { BCarousel, BCarouselSlide } from 'bootstrap-vue-3'
 
-  export default {
-    data() {
-
-    },
-    methods: {
-
+export default {
+  name: 'App',
+  components: {
+    BCarousel,
+    BCarouselSlide
+  },
+  data() {
+    return {
+      slide: 0 // tracks current slide
     }
   }
+}
 </script>
-<style scoped>
-    .carousel-caption {
-        color: pink !important;
-    }
+
+<style>
+/* Optional: center carousel and add spacing */
+.container {
+  max-width: 1024px;
+}
 </style>
