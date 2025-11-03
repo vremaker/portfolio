@@ -1,6 +1,7 @@
 <template>
     <div>
         <Nav :color="primaryColor" :textColor="accentColor"/>
+        <div class="page-body">
         <section id="header" :style="{backgroundColor: primaryColor}">
             <b-row align-h="center" :style="{color: accentColor}">
                 <b-col cols="8">
@@ -36,6 +37,7 @@
             </svg>
         </div>
         <slot></slot>
+    </div>
     </div>
 </template>
 <script>

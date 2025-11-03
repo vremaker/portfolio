@@ -7,6 +7,7 @@
       :style="{background: primaryColor}"
       ref="stickyElement"
       class="sticky-target"
+      sticky="top"
     >
       <router-link to="/" @click="scrollToTop" class="button">
           <BNavbarBrand :style="{color: accentColor}" href="">Valerie Remaker </BNavbarBrand>
@@ -24,16 +25,16 @@
         is-nav
       >
         <BNavbarNav>
-          <BNavItem  href="#"><span  :style="{color: accentColor}">projects</span></BNavItem>
-          <BNavItem href="#"><span  :style="{color: accentColor}">resume</span></BNavItem>
-          <BNavItem href="#"><span  :style="{color: accentColor}">me</span></BNavItem>
+          <router-link :to="{ path: '/', hash: '#portfolio' }" class="button"> <BNavItem  href="#"><span  :style="{color: accentColor}">projects</span></BNavItem></router-link>
+          <router-link :to="{ path: '/resume' }" @click="scrollToTop" class="button"><BNavItem href="#"><span  :style="{color: accentColor}">resume</span></BNavItem></router-link>
+          <router-link :to="{ path: '/about' }" @click="scrollToTop" class="button"><BNavItem href="#"><span  :style="{color: accentColor}">me</span></BNavItem></router-link>
         </BNavbarNav>
      </BCollapse>
     </BNavbar>
 </template>
 
 <script>
-import { BNavbarToggle } from 'bootstrap-vue-3'
+import { BNavbarToggle } from 'bootstrap-vue-3';
 import { BNavbarNav } from 'bootstrap-vue-next';
 import { nextTick } from 'vue';
 export default {
@@ -72,7 +73,7 @@ export default {
     },
     handleScroll() {
       this.isSticky = window.scrollY >= this.stickyOffset;
-   //   console.log(window.scrollY);
+    
       if(window.scrollY <= 600 && this.$route.path !== "/") {
         this.primaryColor = this.headerColor;
         this.accentColor = this.headerAccent;
@@ -101,16 +102,8 @@ export default {
 
 .sticky {
 
-  position: fixed;
-  top: 0px;
-  left: 0; 
-  right: 0;
- 
-  width: 100%;
-  padding: env(safe-area-inset-top);
-  background: inherit;
+z-index: 1200;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.25s ease, box-shadow 0.3s ease;
   
 }
 

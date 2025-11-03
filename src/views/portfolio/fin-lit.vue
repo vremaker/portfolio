@@ -1,5 +1,6 @@
 <template>
   <PortfolioPiece :title="headerDetails.title" :color="headerDetails.color" :subtitle="headerDetails.subtitle" :role="headerDetails.role" :timeline="headerDetails.timeline" :tools="headerDetails.tools" :team="headerDetails.team" :accentColor="headerDetails.accentColor"  >
+    <carousel></carousel>
     <section id="story">
       <b-row align-h="center">
         <b-col cols="8">

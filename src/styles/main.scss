@@ -1,3 +1,7 @@
+
+// Import Bootstrap
+@use "bootstrap" as *;
+
 @use "@/styles/lib/_global"; 
 @use "@/styles/lib/_nav";
 // @use "@/styles/lib/_portfolio";
@@ -9,7 +13,7 @@
 // @use "@/styles/lib/_form";
 // @use "@/styles/lib/_util";
 // @use "@/styles/lib/_card";
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 

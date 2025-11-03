@@ -4,7 +4,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store'; // remove if not using Vuex
 
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
 // BootstrapVue 3
 import BootstrapVue3 from 'bootstrap-vue-3'

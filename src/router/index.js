@@ -41,42 +41,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/rules-optimizer.vue')
   },
-  {
-    path: '/crochet-buddy',
-    name: 'Crochet Buddy',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/crochet-buddy.vue')
-  },
-  {
-    path: '/transit',
-    name: 'Emerald City Transit Redesign',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/transit.vue')
-  },
-  {
-    path: '/nature',
-    name: 'Access to Nature & Crime',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/nature.vue')
-  },
+  
   {
     path: '/design-system',
     name: 'A Unified PPE Experience',
     component: () => import('../views/portfolio/design-system.vue')
-  },
-  {
-    path: '/common-ground',
-    name: 'Common Ground',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/common-ground.vue')
   },
   {
     path: '/night-owl',
@@ -94,20 +63,31 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Portfolio.vue')
   },
-  {
-    path: '/zoom-u',
-    name: 'The Virtual College Experience',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/zoom-u.vue')
-  }
+
 
 ]
 
 const router = createRouter({
   history: createWebHistory(), // standard HTML5 history mode
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+    if (to.hash) {
+      // Use a small delay to ensure the element exists
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const el = document.querySelector(to.hash)
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' })
+          }
+          resolve({ el: to.hash })
+        }, 100) // 50-200ms delay usually works
+      })
+    }
+    return { top: 0 }
+  },
 });
 
 export default router;
