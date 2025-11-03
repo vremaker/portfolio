@@ -1,24 +1,6 @@
 
 // Import Bootstrap
-@use "bootstrap" as *;
 
-@use "@/styles/lib/_global"; 
-@use "@/styles/lib/_nav";
-// @use "@/styles/lib/_portfolio";
-@use "@/styles/lib/_about";
-@use "@/styles/lib/_landing";
-//@use "@/styles/lib/_banner";
-// @use "@/styles/lib/_typography";
-// @use "@/styles/lib/_button";
-// @use "@/styles/lib/_form";
-// @use "@/styles/lib/_util";
-// @use "@/styles/lib/_card";
-//@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
-
-// --
-
-//@import "@/styles/lib/_landing";
-
+@use "../styles/lib/_about";
+@use "../styles/lib/_global";
+@use "../styles/lib/_landing";

@@ -35,7 +35,7 @@
 
 <script>
 import { BNavbarToggle } from 'bootstrap-vue-3';
-import { BNavbarNav } from 'bootstrap-vue-next';
+
 import { nextTick } from 'vue';
 export default {
     components: {
