@@ -1,16 +1,16 @@
 <template>
   <div id="cool">
-    <Nav :color="primaryColor" :textColor="red" />
+    <Nav :color="primaryColor"  />
     <div class="page-body">
       <section :style="{ backgroundColor: primaryColor }" id="landing">
-        <div class="d-flex flex-column flex-lg-row justify-content-lg-around h-100 px-0">
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-center h-100 px-0">
           <!-- <div id="val-sketch" class=""> -->
-          <img src="../assets/gallery-frame.png" alt="">
+          <img class="test-img" src="../assets/gallery-frame.png" alt="">
           <!-- </div> -->
           <div class="overlay-text">
             <div class="text">
 
-              <h1> Hi, I'm Valerie <span id="cute">✨</span> </h1>
+              <h1> Hiya! I'm Valerie <span id="cute">✨</span> </h1>
 
               <p>I’m a user experience designer based in the Seattle area. I’m passionate creating consistency using
                 design systems and I love to use human centered design practices to solve complex problems. </p>

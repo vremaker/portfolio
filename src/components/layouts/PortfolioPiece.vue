@@ -9,17 +9,17 @@
                     <p class="subhead">{{subtitle}}</p>
                     <hr />
 
-                    <b-row align-h="start">
-                        <b-col cols="4">
+                    <b-row align-h="end">
+                        <b-col  col="12" md="4"  >
                             <p class="fw-bold">Role</p>
                             <p>{{role}}</p>
                             <p>{{ timeline }})</p>
                         </b-col>
-                        <b-col cols="4">
+                        <b-col  col="12" md="4">
                             <p class="fw-bold">Tools</p>
                             <p>{{tools}}</p>
                         </b-col>
-                        <b-col cols="4">
+                        <b-col  col="12" md="4">
                             <p class="fw-bold">Team</p>
                             <p>{{ team }}</p>
                         </b-col>
