@@ -11,8 +11,8 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/me',
+    name: 'Me',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -64,32 +64,32 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
-  },
+  }
 
 
 ]
 
 const router = createRouter({
-  history: createWebHistory(), // standard HTML5 history mode
+  history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    }
     if (to.hash) {
-      // Use a small delay to ensure the element exists
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          const el = document.querySelector(to.hash)
-          if (el) {
-            el.scrollIntoView({ behavior: 'smooth' })
-          }
-          resolve({ el: to.hash })
-        }, 100) // 50-200ms delay usually works
-      })
+      // If the route has a hash (e.g., #section1), scroll to that element
+      return {
+        el: to.hash,
+        behavior: 'instant', // This provides the scrolling animation
+      };
+    } else if (savedPosition) {
+      // If navigating with browser back/forward buttons, restore saved position
+      return savedPosition;
+    } else {
+      // Otherwise, scroll to the top of the page (with smooth behavior if desired)
+      return {
+        top: 0,
+        behavior: 'instant', // Optional: smooth scroll to top
+      };
     }
-    return { top: 0 }
-  },
+  }
 });
 
 export default router;

@@ -27,7 +27,7 @@
         <BNavbarNav>
           <router-link :to="{ path: '/', hash: '#portfolio' }" class="button"> <BNavItem  href="#"><span  :style="{color: accentColor}">projects</span></BNavItem></router-link>
           <router-link :to="{ path: '/resume' }" @click="scrollToTop" class="button"><BNavItem href="#"><span  :style="{color: accentColor}">resume</span></BNavItem></router-link>
-          <router-link :to="{ path: '/about' }" @click="scrollToTop" class="button"><BNavItem href="#"><span  :style="{color: accentColor}">me</span></BNavItem></router-link>
+          <router-link :to="{ path: '/me' }" @click="scrollToTop" class="button"><BNavItem href="#"><span  :style="{color: accentColor}">me</span></BNavItem></router-link>
         </BNavbarNav>
      </BCollapse>
     </BNavbar>
