@@ -72,6 +72,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  mode: "hash",
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       // If the route has a hash (e.g., #section1), scroll to that element
