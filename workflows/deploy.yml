@@ -1,35 +1,47 @@
-name: Deploy Vue App to GitHub Pages
+- name: Build
+  run: npm run build
 
-on:
-  push:
-    branches:
-      - master   # or master
+- name: Add custom domain (CNAME)
+  run: echo "valerieremaker.com" > dist/CNAME
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+- name: Deploy to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v4
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./dist
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+# name: Deploy Vue App to GitHub Pages
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18         # Vue CLI works best on Node 16–18
+# on:
+#   push:
+#     branches:
+#       - master   # or master
 
-      - name: Install dependencies
-        run: npm install
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
 
-      - name: Build
-        run: npm run build
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
 
-      - name: Add custom domain 
-        run: echo "valerieremaker.com" > dist/CNAME
+#       - name: Setup Node
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: 18         # Vue CLI works best on Node 16–18
+
+#       - name: Install dependencies
+#         run: npm install
+
+#       - name: Build
+#         run: npm run build
+
+#       - name: Add custom domain 
+#         run: echo "valerieremaker.com" > dist/CNAME
 
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+#       - name: Deploy to GitHub Pages
+#         uses: peaceiris/actions-gh-pages@v4
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./dist
