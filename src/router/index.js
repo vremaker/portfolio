@@ -44,4 +44,20 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),  // GitHub Pages
+  history: createWebHashHistory(),  // GitHub Pages safe
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'instant'
+      };
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0, behavior: 'instant' };
+    }
+  }
+});
+
+export default router;
