@@ -1,137 +1,88 @@
 <template>
-  <WithNav>
-    <div
-      id="landing"
-      :style="image"
-      class="d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="
-          p-3
-          text-center
-          w-75
-          d-flex
-          justify-content-center
-          align-items-center
-        "
-        id="landing-info"
-      >
-        <div class="p-3">
-          <h1>
-            Hi There,
-            
-            I'm Valerie!
-          </h1>
-          <p>
-            I am a human-centered designer with experience in UX research, UX
-            design, and software development. I am passionate about taking
-            complex problems in all disciplines and creating simple, intuitive,
-            and implementable solutions for all users.
-          </p>
-          <div id="connect" class="d-flex justify-content-center flex-row-wrap">
-            <a href="mailto:vremaker@gmail.com" target="_blank">
-              <img
-                class="icon"
-                src="assets/email.svg"
-                alt="Email Valerie Remaker"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/valerie-remaker/"
-              target="_blank"
-            >
-              <img
-                class="icon"
-                src="assets/linked.svg"
-                alt="Valerie Remaker's Linkedin"
-            /></a>
-            <!--<a href="https://www.instagram.com/valer_tree/" target="_blank"
-              ><img
-                class="icon"
-                src="assets/insta.svg"
-                alt="Valerie Remaker's Instagram"
-            /></a> -->
-            <a href="https://github.com/vremaker" target="_blank">
-              <img
-                class="icon"
-                src="assets/github.svg"
-                alt="Valerie Remaker's Github"
-            /></a>
+  <div id="cool">
+    <Nav :color="primaryColor"  />
+    <div class="page-body">
+      <section :style="{ backgroundColor: primaryColor }" id="landing">
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-center h-100 px-0">
+          <!-- <div id="val-sketch" class=""> -->
+          <img class="test-img" src="../assets/gallery-frame.png" alt="">
+          <!-- </div> -->
+          <div class="overlay-text">
+            <div class="text">
+
+              <h1> Hiya! I'm Valerie <span id="cute">✨</span> </h1>
+
+              <p>I’m a user experience designer based in the Seattle area. I’m passionate creating consistency using
+                design systems and I love to use human centered design practices to solve complex problems. </p>
+              <!-- <span class="subheading">Human Centered Designer</span> -->
+            </div>
           </div>
         </div>
+      </section>
+
+      <div class="custom-shape-divider-top-1761616648 flip" :style="{ fill: primaryColor }" >
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+
+
+
+      <div id="portfolio">
+        <PortfolioTile />
       </div>
     </div>
-
-    <PortfolioTile />
-  </WithNav>
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import PortfolioTile from "@/components/portfolio-tile";
-import WithNav from "@/components/layouts/WithNav";
+import Nav from "@/components/nav-bar";
 //"{'background-image':}"
 export default {
   name: "Home",
   components: {
-    WithNav,
+    Nav,
     PortfolioTile,
   },
-
-  created() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
+  
   methods: {
-    handleScroll(event) {},
+
     scrollToTop() {
       window.scrollTo(0, 0);
     },
+
   },
   data() {
     return {
-      image: { backgroundImage: "url(assets/swoop.png)" },
-      tiles: [
-        {
-          short: "on-trak",
-          name: "OnTrak Troubleshooting",
-          description:
-            "A simple, fun, and easy to use troubleshooting application designed to empower product users resolve common hardware issues without calling customer service for help.",
-        } /*
-        {
-          short: "crochet-buddy",
-          name: "Prototyping Crochet Buddy",
-          description:
-            "Crochet Buddy is an Internet of Things (IoT) device created to assist novice crochet hobbyists in their pursuit of beautiful yarn-craft.",
-        },*/,
-        {
-          short: "transit",
-          name: "Emerald City Transit Redesign",
-          description:
-            "Inspired by the song One Short Day, from Wicked: The Musical & Seattle's Emerald City nickname, this brand redesign seeks to add whimsy and fun to an otherwise boring commute.",
-        },
-        {
-          short: "common-ground",
-          name: "Common Ground",
-          description:
-            "Common Ground focuses on uniting people rather than dividing them during a very this politically charged era of society. Finalist in the HCDE Democracy Design Jam.",
-        },
-        {
-          short: "night-owl",
-          name: "Night Owl",
-          description:
-            "An app designed to keep UW students safe while walking around at night.",
-        },
-        {
-          short: "zoom-u",
-          name: "The Virtual College Experience",
-          description:
-            "A qualitative research study which sought to answer the question: how do college students motivate and maintain productivity while learning from home?",
-        },
-      ],
+      primaryColor: "#F7D2D6"
+
     };
   },
 };
 </script>
+
+<style scoped>
+.custom-shape-divider-top-1761616648 {
+  bottom: -5;
+
+  width: 100%;
+
+  transform: rotate(180deg);
+  margin-bottom: 10vh;
+  
+}
+
+.custom-shape-divider-top-1761616648 svg {
+  position: relative;
+  display: block;
+  width: calc(149% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+
+</style>

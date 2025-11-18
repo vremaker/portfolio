@@ -40,7 +40,7 @@
           <li>Focus on one step at a time</li>
           <li>Include gamification elements to reduce frustration</li>
         </ul>
-      </p>
+      <!-- </p> -->
       <h2>User Persona</h2>
       <p>
         From the foundational information I was given regarding the drillers

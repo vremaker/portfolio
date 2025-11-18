@@ -1,107 +1,55 @@
 <template>
-  <WithNav>
-    <div
-      class="cow d-flex justify-content-around align-items-center align-items-lg-center
-        mt-5 mt-lg-0">
-      <div
-        class="
-          d-flex
-          justify-content-around
-          align-items-center
-          flex-column flex-lg-row
-        "
-      >
-        <div
-          id="img"
-          :style="{ 'background-image': 'url(assets/vertical-swoop.png)' }"
-          class="cow small d-flex justify-content-center align-items-center"
-        >
-          <img
-            class="image rounded-circle"
-            src="assets/val.jpeg"
-            alt="A blonde girl standing in front of a colorful wall"
-          />
-        </div>
-        <img
-          id="mobile"
-          class="image rounded-circle mt-5"
-          src="assets/val.jpeg"
-          alt="A blonde girl standing in front of a colorful wall"
-        />
+  <Nav />
+      <div class="page-body">
+      <section :style="{ backgroundColor: primaryColor }" id="landing">
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-center h-100 px-0">
+          <!-- <div id="val-sketch" class=""> -->
+          <img class="test-img" src="../assets/gallery-frame.png" alt="">
+          <!-- </div> -->
+          <div class="overlay-text">
+            <div class="text">
 
-        <div id="text-box" class="large">
-          <div id="text">
-            <h1 class="pt-0">It's nice to meet you!</h1>
-            <p>
-              I'm Valerie Remaker and I graduated from The University of
-              Washington pursuing a double degree in Human Centered Design and
-              Engineering (HCDE) and Psychology. During my time at The University of Washington, I focused my studies 
-              on a broad range of interests including UX Design, UX Research, and Software Development. 
-              I have cultivated my UX skills to be a flexible and versatile team player who can readily 
-              adapt to a variety of roles and can communicate effectively with all members of the product team.  
-              </p>
-            <p>
-              I have been involved in a wide variety of undergraduate research projects in
-              both Psychology and HCDE. Currently, I help conduct
-              qualitative research which analyzed TikTok videos from the Texas
-              Energy Crisis to understand the role of social media in crisis
-              responses. In the department of psychology, I helped collect data
-              for a Virtual Reality study which investigated participants'
-              reaction to different levels of immersion into simulated natural
-              environments.
-            </p>
-            <p>
-              In my free-time I love to crochet and enjoy the natural world.
-            </p>
+              <h1> Hiya! I'm Valerie <span id="cute">✨</span> </h1>
+
+              <p>I’m a user experience designer based in the Seattle area. I’m passionate creating consistency using
+                design systems and I love to use human centered design practices to solve complex problems. </p>
+              <!-- <span class="subheading">Human Centered Designer</span> -->
+            </div>
           </div>
         </div>
+      </section>
+
+      <div class="custom-shape-divider-top-1761616648 " :style="{ fill: primaryColor }">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"></path>
+        </svg>
       </div>
-    </div>
-  </WithNav>
+      </div>
 </template>
 
 <script>
-import WithNav from "@/components/layouts/WithNav.vue";
+
+import Nav from "@/components/nav-bar";
 
 export default {
+
   components: {
-    WithNav,
+    Nav
   },
   data() {
     return {
       width: window.innerWidth,
+      primaryColor: '#e63b6e'
     };
   },
-  created() {
-    window.addEventListener("resize", this.yo);
-  },
-  destroyed() {
-    window.removeEventListener("resize", this.yo);
-  },
   mounted() {
-    if (window.innerWidth < 992) {
-      document.querySelector("#img").classList.add("hidden");
-      document.querySelector("#mobile").classList.remove("hidden");
-      document.querySelector("#text-box").classList.remove("large");
-    } else {
-      document.querySelector("#img").classList.remove("hidden");
-      document.querySelector("#mobile").classList.add("hidden");
-      document.querySelector("#text-box").classList.add("large");
-    }
+ 
   },
   methods: {
-    yo(e) {
-      if (window.innerWidth < 992) {
-        document.querySelector("#img").classList.add("hidden");
-        document.querySelector("#mobile").classList.remove("hidden");
-        document.querySelector("#text-box").classList.remove("large");
-      } else {
-        document.querySelector("#img").classList.remove("hidden");
-        document.querySelector("#mobile").classList.add("hidden");
-        document.querySelector("#text-box").classList.add("large");
-      }
-    },
-  },
+  
+  }
 };
 </script>
 <style scoped>
@@ -109,4 +57,23 @@ export default {
 .hidden {
   display: none !important;
 }
+
+.custom-shape-divider-top-1761616648 {
+  bottom: -5;
+
+  width: 100%;
+
+  transform: rotate(180deg);
+  margin-bottom: 10vh;
+}
+
+.custom-shape-divider-top-1761616648 svg {
+  position: relative;
+  display: block;
+  width: calc(149% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+
 </style>

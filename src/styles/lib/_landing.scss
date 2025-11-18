@@ -1,0 +1,120 @@
+@use 'variables' as vars;
+
+#landing {
+    //margin-top: -25px;
+    height: 80vh;
+    
+    width: 100vw;
+
+    .image-container {
+        height: 90vh;
+    }
+}
+
+#landing img {
+    width: 35%;
+    max-height: 60vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 6rem;
+    margin-right: 2rem;
+
+    object-fit: contain;
+}
+
+#landing div {
+    //background-color: green;
+    //height: 100vh;
+}
+
+
+
+#landing .overlay-text {
+    border-radius: 0;
+   // margin: auto 5rem;
+margin: auto;
+     margin-left: 3rem;
+     margin-right: 3rem;
+    .text {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+     //   height: 100vh;
+        //max-width: 500px;
+    }
+}
+
+.subheading {
+    color: vars.$brand-pink;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#val-sketch {
+    object-fit: contain;
+    width: auto;
+}
+
+@media (max-width: 992px) {
+    #landing {
+      //  position: relative;
+        /* Establishes a positioning context */
+      //  display: inline-block;
+        /* Shrink-wrap to image size */
+    }
+
+    #landing img {
+        //display: block;
+        width: 50%;
+
+        margin: auto;
+        margin-bottom: 2rem ;
+       
+       //  margin: auto;
+        //height: auto;
+    }
+
+
+    .overlay-text {
+        margin-top: 0 !important; 
+        text-align: center;
+        
+        
+     padding-left: 2rem;
+     padding-right: 2rem;
+    }
+
+    .text {
+        margin: auto;
+        height: auto;
+    }
+
+
+#landing .overlay-text {
+    border-radius: 0;
+    margin: auto 5rem;
+
+    // padding-left: 2rem;
+    // padding-right: 8rem;
+    .text {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        //max-width: 500px;
+    }
+}
+
+    // #landing img {
+    //     height: 95vh;
+    //     width: 100% !important;
+    //     overflow-y: hidden;
+    //      margin-top: 40px;
+    // // height: calc(100vh - 40px);
+    // }
+}
+
+.text {
+    max-width: 800px;
+}
+

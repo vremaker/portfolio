@@ -1,23 +1,2 @@
-.navbar {
-    background-color: #d24584;
-    position:fixed;
-}
+@use "variables" as vars;
 
-.display {
-  font-family: 'Playfair Display', serif;
-}
-.body-cop {
-  font-family: 'Lato', sans-serif;
-}
-
-@media (min-width: 992px) {
-    .navbar-collapse {
-      justify-content: flex-end;
-    }
-}
-  
-@media (max-width: 992px) {
-    .navbar-collapse {
-      text-align: center;
-    }
-}

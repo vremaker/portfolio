@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import Home from '@/views/Home.vue';
+import About from '@/views/About.vue';
 
-Vue.use(VueRouter)
+// Add more routes as needed
 
 const routes = [
   {
@@ -11,8 +11,8 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/me',
+    name: 'Me',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -34,37 +34,19 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/on-trak.vue')
   },
-  {
-    path: '/crochet-buddy',
-    name: 'Crochet Buddy',
+    {
+    path: '/rules',
+    name: 'Rules Optimizer',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/crochet-buddy.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/rules-optimizer.vue')
   },
+  
   {
-    path: '/transit',
-    name: 'Emerald City Transit Redesign',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/transit.vue')
-  },
-  {
-    path: '/nature',
-    name: 'Access to Nature & Crime',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/nature.vue')
-  },
-  {
-    path: '/common-ground',
-    name: 'Common Ground',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/common-ground.vue')
+    path: '/design-system',
+    name: 'A Unified PPE Experience',
+    component: () => import('../views/portfolio/design-system.vue')
   },
   {
     path: '/night-owl',
@@ -74,29 +56,42 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/night-owl.vue')
   },
-  {
-    path: '/portfolio',
-    name: 'Portfolio',
+
+    {
+    path: '/resume',
+    name: 'Resume',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Portfolio.vue')
-  },
-  {
-    path: '/zoom-u',
-    name: 'The Virtual College Experience',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/portfolio/zoom-u.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
   }
+
 
 ]
 
-const router = new VueRouter({
-  mode: 'hash',
-  base: process.env.BASE_URL,
-  routes
-})
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      // If the route has a hash (e.g., #section1), scroll to that element
+      return {
+        el: to.hash,
+        behavior: 'instant', // This provides the scrolling animation
+      };
+    } else if (savedPosition) {
+      // If navigating with browser back/forward buttons, restore saved position
+      return savedPosition;
+    } else {
+      // Otherwise, scroll to the top of the page (with smooth behavior if desired)
+      return {
+        top: 0,
+        behavior: 'instant', // Optional: smooth scroll to top
+      };
+    }
+  }
+});
 
-export default router
+export default router;
+
+
