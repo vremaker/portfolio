@@ -49,7 +49,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),   // FIXED → hash mode for GitHub Pages
+  history: createWebHashHistory(),   // FIXED → hash mode for GitHub Pages
   routes,
 
   scrollBehavior(to, from, savedPosition) {
