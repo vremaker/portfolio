@@ -1,35 +1,31 @@
-name: Deploy Vue 3 App to GitHub Pages
+name: Deploy Vue App to GitHub Pages
 
 on:
   push:
-    branches: ["master"]
-  workflow_dispatch:
+    branches:
+      - master   # or master
 
 jobs:
-
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18         # Vue CLI works best on Node 16–18
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
+      - name: Build
         run: npm run build
 
-      - name: Add .nojekyll
-        run: echo "" > dist/.nojekyll
-
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
