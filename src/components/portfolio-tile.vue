@@ -3,7 +3,7 @@
   <b-row align-h="center">
     <b-col cols="10">
       <div>
-        <h2>My Projects</h2>
+        <!-- <h2>My Projects</h2> -->
         <div id="projects" class=""> <!-- wrapper -->
           <div class="box"> <!--box-->
             <div v-for="tile in tiles" :key="tile.name" class="card">

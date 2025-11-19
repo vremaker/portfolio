@@ -1,6 +1,6 @@
 @use 'variables' as vars;
 
-#landing {
+#landing, #About {
     //margin-top: -25px;
     height: 80vh;
     
@@ -11,7 +11,17 @@
     }
 }
 
-#landing img {
+.overlay-text {
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#About .overlay-text {
+    margin-right: 5rem;
+}
+
+#landing img, #About img {
     width: 35%;
     max-height: 60vh;
     margin-top: auto;
@@ -74,15 +84,27 @@ margin: auto;
         //height: auto;
     }
 
+    //code for if I want image on mobile 
+    #About img {
+      height: 40vh;
+      width: fit-content;
+      margin: auto;
+
+    }
 
     .overlay-text {
         margin-top: 0 !important; 
         text-align: center;
         
-        
+        margin-right: auto;
      padding-left: 2rem;
      padding-right: 2rem;
     }
+
+    #About .overlay-text {
+        margin-right: 0;
+    }
+  
 
     .text {
         margin: auto;
@@ -114,6 +136,20 @@ margin: auto;
     // }
 }
 
+@media (max-width: 768px) {
+    #About img {
+        display: none;
+    }
+
+   #About .overlay-text {
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin-right: auto;
+     //   background-color: red;
+    }
+}
 .text {
     max-width: 800px;
 }
