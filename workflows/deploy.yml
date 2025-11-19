@@ -3,7 +3,7 @@ name: Deploy Vue.js to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
@@ -26,6 +26,9 @@ jobs:
 
       - name: Add custom domain
         run: echo "valerieremaker.com" > dist/CNAME
+   
+      - name: Disable Jekyll
+        run: touch dist/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
