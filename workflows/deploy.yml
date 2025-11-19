@@ -3,40 +3,34 @@ name: Deploy Vue.js to GitHub Pages
 on:
   push:
     branches:
-      - main  # Deploy when main branch is updated
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Set up Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
 
-      # 3. Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # 4. Build the Vue.js app
-      - name: Build
+      - name: Build Vue.js app
         run: npm run build
 
-      # 5. Add custom domain
       - name: Add custom domain
         run: echo "valerieremaker.com" > dist/CNAME
 
-      # 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          # Optional: you can force clean the branch to remove old files
-          # force_orphan: true
+          publish_branch: deploy  # <-- REQUIRED for custom branch
+          force_orphan: true
