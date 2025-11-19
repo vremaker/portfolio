@@ -24,6 +24,10 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Add custom domain
+        run: echo "valerieremaker.com" > dist/CNAME
+
+
       - name: Add .nojekyll
         run: echo "" > dist/.nojekyll
 
