@@ -40,6 +40,7 @@ import { BNavbarToggle } from 'bootstrap-vue-3';
 import { nextTick } from 'vue';
 export default {
     components: {
+    
     BNavbarToggle
   },
  props: {color: String, textColor: String},
