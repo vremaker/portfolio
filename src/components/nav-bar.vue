@@ -6,7 +6,7 @@
       :class="{ sticky: isSticky }"
       :style="{background: primaryColor}"
       ref="stickyElement"
-      class="sticky-target"
+      class="sticky-target sticky top-0 z-50"
       sticky="top"
     >
       <router-link to="/" @click="scrollToTop" class="button">

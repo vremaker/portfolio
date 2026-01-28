@@ -57,22 +57,51 @@
         ></path>
       </svg>
     </div>
-    <p> poop</p>
-  </div>
-        
+    <div class="grid grid-cols-4 gap-6 p-8">
+      <div v-for="(image, index) in images" :key="index" class="overflow-hidden rounded-lg h-64 w-full">
+        <ImageEnlarger :imageSrc="image.src" :imageAlt="image.alt" :caption="image.caption" />
+      </div>
+    </div>
+</div>
 </template>
 
 <script>
 import Nav from "@/components/nav-bar";
+import ImageEnlarger from "../components/layouts/ImageEnlarger.vue";
 
 export default {
   components: {
     Nav,
+    ImageEnlarger
   },
   data() {
     return {
       width: window.innerWidth,
       primaryColor: "#F2B287",
+      images:[
+        { src: '/assets/about/hikers.JPEG', alt: 'Valerie and her fiance on a mountain', caption: 'My fiance and I love to climb up mountains' },
+        { src: '/assets/about/rockers.JPEG', alt: 'Valerie and her friend in front of a rock on a backpacking trip', caption: 'My friend and I on a backpacking trip' },
+        { src: '/assets/about/ski_couple.JPEG', alt: 'Valerie and her fiance in patterned ski suits', caption: 'My fiance and I skiing' },
+        { src: '/assets/about/biker_babe2.JPEG', alt: 'Valerie and her motorcycle', caption: 'I enjoy motorcycling' },
+        { src: '/assets/about/berry.JPEG', alt: 'Valerie picking wild blueberries', caption: 'Getting my grisly bear on, picking wild blueberries' },
+        { src: '/assets/about/amigo.JPEG', alt: 'Valerie and Izusu Amigo', caption: 'My trusty Amigo fulfills my love for convertibles and the mountains' },
+        { src: '/assets/about/biker_gang.JPEG', alt: 'Valerie and her friends on their motorcycles', caption: 'My friends and I love to go on long motorcycle journeys' },
+        { src: '/assets/about/lighthouse_pals.JPEG', alt: 'Valerie and her friends in a lighthouse on', caption: 'My friends and I on a lighthouse tour' },
+        { src: '/assets/about/hikers.JPEG', alt: 'Valerie and her fiance on a mountain', caption: 'My fiance and I love to climb up mountains' },
+
+        // { src: require('../assets/about/amigo.png'), alt: 'Isuzu Amigo', caption: 'My trusty Amigo' },
+        // { src: require('../assets/about/babys_first_skis.png'), alt: "Baby's first skis", caption: "Baby's first skis" },
+        // { src: require('../assets/about/big_rock.png'), alt: 'Big rock', caption: 'Big rock adventure' },
+        // { src: require('../assets/about/blue_shirt.png'), alt: 'Blue shirt', caption: 'Blue shirt days' },
+        // { src: require('../assets/about/index_cycle.png'), alt: 'Index cycle', caption: 'Index cycling' },
+        // { src: require('../assets/about/lighthouse.png'), alt: 'Lighthouse', caption: 'Lighthouse exploration' },
+        // { src: require('../assets/about/motorcycle_gang.png'), alt: 'Motorcycle gang', caption: 'The motorcycle crew' },
+        // { src: require('../assets/about/mountaintop.png'), alt: 'Mountaintop', caption: 'Mountain peaks' },
+        // { src: require('../assets/about/ornage_cats.png'), alt: 'Orange cats', caption: 'Orange friends' },
+        // { src: require('../assets/about/ski_bum.png'), alt: 'Ski bum', caption: 'Ski season vibes' },
+        // { src: require('../assets/about/ski_fiance.png'), alt: 'Ski fiance', caption: 'Ski with my love' },
+        // { src: require('../assets/about/tandem.png'), alt: 'Tandem', caption: 'Tandem adventures' }
+      ]
     };
   },
   mounted() {},
@@ -80,6 +109,8 @@ export default {
 };
 </script>
 <style scoped>
+
+
 .hidden {
   display: none !important;
 }

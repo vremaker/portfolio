@@ -19,7 +19,7 @@ const routes = [
   {
     path: '/fin-lit',
     name: 'Chime Financial Literacy',
-    component: () => import('../views/portfolio/fin-lit.vue')
+    component: () => import('../views/portfolio/fin-lit.vue') 
   },
   {
     path: '/on-trak',
