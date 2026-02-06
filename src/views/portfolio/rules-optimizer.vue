@@ -1,98 +1,168 @@
 <template>
-  <PortfolioPiece :title="headerDetails.title" :color="headerDetails.color" :subtitle="headerDetails.subtitle" :role="headerDetails.role" :timeline="headerDetails.timeline" :tools="headerDetails.tools" :team="headerDetails.team" :accentColor="headerDetails.accentColor"  >
+  <PortfolioPiece :title="headerDetails.title" :color="headerDetails.color" :subtitle="headerDetails.subtitle"
+    :role="headerDetails.role" :timeline="headerDetails.timeline" :tools="headerDetails.tools"
+    :team="headerDetails.team" :accentColor="headerDetails.accentColor">
     <section id="story">
       <b-row align-h="center">
         <b-col cols="8">
           <section id="background">
             <h2>Background </h2>
-            <h3> Chime Banking Customers generally have an understanding of their cash flow, but feel they can’t build
-              wealth. </h3>
-            <p>Chime users want to be active participants in their personal finances. They are drawn to Chime’s credit
-              building features and forgiving policies such as no overdraft or monthly fees. They generally have a good
-              picture of their net worth but feel they can’t build wealth. Our approach focus on users living pay check
-              to
-              paycheck which we defined as an income of $75,000 a year. </p>
+            <p>
+              Optimal Blue Administrators monitor market conditions and set qualification guidelines for a multitude of
+              mortgage products across several investors to deliver
+              accurate and up to date pricing. Administrators manage three types of product pricing: pricing maintained
+              by our internal content team; overlays that modify a subsets of internally managed pricing; and fully
+              custom, administrator-managed pricing grids to give users full control as needed.
+            </p>
+            <p>
+              In the legacy Optimal Blue environment, administrators were required to define qualification rules in a
+              highly localized manner. Rules had to be applied at the investor level by selecting a specific product or
+              product folder. As a result, administrators frequently encountered duplicative products across investors.
+              For example, a 30-year conforming loan for Fannie Mae and Citibank had to be managed separately, even when
+              the same qualification guidelines applied.
+            </p>
+            <p>
+              When market conditions changed and pricing guidelines needed to be updated, administrators were forced to
+              make the same updates in multiple locations to maintain pricing accuracy across affected products. This
+              repetitive process not only increased administrative effort but also introduced frustration and a higher
+              risk of user error.
+            </p>
+
           </section>
           <section id="question">
-            <h1 class="accent">How can we help Chime users build wealth in an easy, fun, and accessible way?</h1>
+            <h1 class="accent" :style="{ color: '#1979cc' }">How can we optimize the product creation workflow to
+              increase efficiency for Optimal
+              Blue administrators?</h1>
             <p class="fw-light">Design Question</p>
           </section>
-          <section id="reserach">
-            <h2>User Research </h2>
-            <p>To better understand our user base, we conducted a general survey (n = 89) to explore the range of financial situations and identify who would most benefit from our tool. We then interviewed 12 participants earning under $75,000 to gain deeper insight into their specific financial needs.</p>
-            <h3>How do people from all walks of life perceive their financial situation? </h3>
+          <section id="requirements">
+            <h2>Design Requirements</h2>
+            <p><b>Goal</b>: Enhance the speed at which administrators can manage the rules that qualify a loan for a
+              given mortgage product.</p>
+            <b>
+              Initial requests for the product Team
+            </b>
             <ul>
-              <li>People with greater wealth typically had more financial support from their family and demonstrated a greater understanding of a wider range of financial topic.</li>
-              <li>People who experienced greater financial hardship often found it challenging to focus on building wealth, as their attention was consumed by managing their immediate financial burdens.</li>
-              <li>Finances are very personal, which causes some users to feel uneasy about sharing details about their finances without proper trust building. </li>
-            </ul>
-            <h3>How do users want to learn about finances? </h3>
-            <ul>
-              <li>Users distrusted social media as a method of learning, as many financial social media influences promote misinformed financial.</li>
-              <li>Users wanted a free and accessible platform to master the basics rooted in real life situations and evidence based sources, which would allow them to gain confidence in their financial skills by setting goals and them. </li>
-            </ul>
-          </section>
-          <section id="expert">
-            <h2>Learning From The Experts </h2>
-            <p>We then interviewed financial experts to learn the tools they use to build wealth for others.</p>
-            <h3>What does it take to master financial literacy?  </h3>
-            <ul>
-              <li>Keep it simple and keep it real: Break complex financial topics into several smaller, easy to understand steps.</li>
-              <li>Meet people where they are: Focus on topics that are achievable at their current financial level.</li>
-              <li>Make content that is accessible for a variety of learning styles: Provide a variety of resources that focus on the big picture such as: Case studies, watching videos, and taking quizzes. </li>            </ul>
-            <h3>How do you build wealth?  </h3>
-            <ul>
-              <li>Understand Compound Interest, the building block of the financial industry. Use it to your advantage, not to your detriment. </li>
-              <li>Learn to maximize pre-tax money by gaining a deeper understanding of how employers programs such as health plans, stock buying plans, or retirement benefits.</li>
-              <li>Focus on finding ways to save. Build a budget to get a better picture of where your money is going. </li>
-              <li>Make your money work for you. Invest money into mutual funds and EFTs, which return dividends over time. </li>
+              <li>Swap between sets and products.</li>
+              <li>More details about products at a higher level. </li>
+              <li>Ability to apply rule to multiple products across investors.</li>
+              <li>More generalized workflows, so users do not have to start over completely if they need to switch
+                between a rule, a grid, and a matrix. </li>
+              <li>Manage rules in a more global way - be able to save a user defined list so to be used in rules at a
+                global level.</li>
+              <li>Need to keep global rules and their associated attributes separate from the legacy investor specific
+                rules and attributes. </li>
             </ul>
           </section>
-          <section id="empathy">
-            <h2>Meet Our Users</h2>
-            <p>Everyone deserves the opportunity to build wealth. Our personas and user journey maps serve as reminders to keep people from all walks of life at the center of our design and decision-making.</p>
-            <!--- COME BACK AND MAKE THESE OPEN INTO A  SLIDEY FULL SCREEN-->
-            <!-- <div class="d-flex flex-row w-100">
-              
-            <img src="../../../public/assets/fin-lit/laura.png" />
-             <img src="../../../public/assets/fin-lit/mark.png" />
+          <section id="UXR">
+            <h2>User Research</h2>
+            <p>
+              Over the course of this project, we conducted user interviews and distributed a survey to gather feedback
+              from stakeholders. This research ensured we delivered a product that enhances user workflows rather than
+              introducing unnecessary complexity without meaningful gains.
+            </p>
+
+            <h3>Key Findings</h3>
+            <ul>
+              <li><strong>High cognitive load:</strong> Legacy solutions required repetitive tasks when managing
+                multiple rules across products and entities</li>
+              <li><strong>Poor scalability:</strong> Legacy overlays were difficult to maintain at scale</li>
+              <li><strong>Missing logic support:</strong> Lack of OR statements limited rule flexibility</li>
+              <li><strong>Limited change visibility:</strong> It was difficult to identify what changed and who made the
+                change</li>
+              <li><strong>Inconsistent terminology:</strong> Terms such as rules, rule sets, and product groups were
+                confusingly similar</li>
+            </ul>
+
+          </section>
+          <section id="video">
+            <h2>Rules Optimizer Overview</h2>
+            <p>
+              Rules Optimizer simplifies rules management with powerful global settings that eliminate repetitive work.
+              Watch Tiffany McGarry, Vice President of Product Management at Optimal Blue, at the company’s Inaugural
+              Summit in 2025 as she shares how Rules Optimizer cut a 60-minute workflow down to just 5 minute generating
+              efficiency gains of up to 80%.
+            </p>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/uzZYMvgUz_E?si=AOPxLDzfDZbOoav2&amp;start=30" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
-            <div  class="d-flex flex-row w-100">
-                  <img  src="../../../public/assets/fin-lit/laura_jm.png" />
-                 <img src="../../../public/assets/fin-lit/mark_jm.png" />
-            </div> -->
-            </section>
-            <section id="define">
-              <h2>What do Our Users Need?</h2>
-              <p>There’s a lot of information out there. To ensure we are able to guide our users through the muck to the best knowledge, we did crazy 8s and storyboarding to define the goal post of our designs.</p>
-              <h3>What features do our users need for success? </h3>
-              <ul>
-                <li><em>Onboarding:</em>  To personalize the experience while finding balance between gathering enough detail to create personalized experiences while avoiding anything that feels overly intrusive. </li>
-                <li><em>Learning Center:</em>A hub filled with resources to learn, with a variety of paths to follow, and full of videos, activities and checkpoints designed to build user confidence. </li>
-                <li><em>Calculators:</em>A suite of tools to help users holistically assess their finances and compare the outcomes of different financial choices with just a few clicks. </li>
-                <li><em>Resource Locator:</em>Provide a variety of resources to get financial advice: through a portal to connect with local fiduciaries virtually or in person, and over text.</li>
-              </ul>
-              <h3>What is the best format for our tool? </h3>
-              <p>Finances are a deeply personal topic and often occupy people’s thoughts throughout the day, no matter where they are. We envisioned our users in various on-the-go situations where they might have quick financial questions and need immediate, reliable answers. This insight led us to develop a mobile app.</p>
-              <!-- <img class="w-100" src="../../../public\assets\fin-lit\storyboards.png" /> -->
-            </section>
-            <section id="design">
-              <h2>The Design Process</h2>
-            </section>
-            <section id="future">
-              <h2>Future State</h2>
-              <p>Over the course of our project, our design ideas evolved significantly as we went through multiple iterations and transitions. One of the biggest areas for growth we identified in our final product was the quality and depth of the lessons. To further develop these lessons and improve their impact, an important next step would be to focus on UX writing and content strategy. This would help us present financial literacy content to users in a clearer, more engaging, and user-friendly way. While the material we included was helpful, we recognized that the presentation could be cleaner and more cohesive.</p>
-              <p>We concluded the project with a user testing session. Although users gave us generally positive feedback, they also provided valuable insights that could guide future improvements. One feature I’m most excited about is displaying the amount of money a user has contributed toward their goal at the top of the goal details page. This visual progress indicator can help motivate users to continue working toward their financial goals.</p>
-              <p>Another key takeaway from testing was the need to refine the layout of our lessons. While the content itself was strong, the interface could benefit from more color, interactivity, and a reduction in text density to make the experience more engaging and approachable.</p>
-                <p>If we were to continue developing this project, we would aim to design additional screens and user flows to enhance the learning experience—such as prototyping savings, budgeting, and custom goal flows, along with expanding the content within the skill builder section. Naturally, this would be followed by further rounds of user testing and iteration, particularly with users living paycheck to paycheck, to ensure our product truly meets their needs.</p>
-              </section>
-            <section id="reflect">
-              <h2>Reflection</h2>
-              <p>This capstone project was a great learning experience. At the start, I was nervous about designing for financial literacy since I didn’t have much knowledge of the topic myself. During the interview process, we discovered that many of our intended users had similar levels of financial literacy awareness, which helped us empathize with their challenges.</p>
-              <p>One of the biggest barriers we observed was the lack of a stable income, especially for those still in school. Our interviews with older participants revealed similar insights about the consequences of neglecting financial literacy and provided valuable perspective on the struggles associated with debt, particularly among lower-income individuals.</p>
-              <p>A turning point came when we interviewed a financial professor at UW, which deepened our understanding of financial literacy and informed our design decisions. On a personal note, this project encouraged me to talk to my dad about financial literacy for the first time. He was thrilled that I wanted to learn more, and I’m grateful that this project not only expanded my professional skills but also sparked a personal commitment to continue improving my financial literacy beyond this experience.</P>
-            </section>
-           
+            <br />
+
+            <h2>Key Features and Enhancements</h2>
+            <b>One-to-Many Rules Management</b>
+            <ul>
+              <li>Create a rule once and apply it across multiple investors or products.</li>
+              <li>Supports both 1:1 relationships (custom rules) and 1:many relationships (shared rules), giving teams
+                flexibility to choose what works best.
+              </li>
+              <li>Existing investor-specific content remains unchanged, preserving accuracy and trust.
+              </li>
+            </ul>
+            <b>Rules & Sets Workspace</b>
+            <ul>
+              <li>A centralized view showing all rules, rule sets, and their relationships in one place.</li>
+
+              <li> Create a rule and assign it to a set or folder for easier organization.
+
+              </li>
+              <li>Top-level filtering by rule type, with additional filters for granular control.
+              </li>
+              <li> Top-level filtering by rule type, with additional filters for granular control.
+              </li>
+              <li> Seamless navigation between rules and the products or investors they’re tied to.
+              </li>
+            </ul>
+
+
+            <b> Rule Reuse & Optimization </b>
+            <ul>
+              <li> Copy an existing rule or rule set to make quick modifications without starting from scratch.</li>
+              <li> Group shared rule attributes (e.g., FICO ranges for adjustment grids) into reusable lists—eliminating
+              </li>
+              <li> Copy an existing rule or rule set to make quick modifications without starting from scratch.</li>
+              <li> repetitive setup work that was previously required per investor.</li>
+            </ul>
+            <b>Effective Date Automation </b>
+            <ul>
+              <li>Define effective start and end dates for product rules.</li>
+              <li> Rules automatically activate and expire with no additional action required.</li>
+              <li> Ideal for limited-time pricing incentives, LLPA changes, or regulatory-driven updates—set it once and
+                forget it.</li>
+            </ul>
+            <b>Transparency & Change Tracking </b>
+            <ul>
+              <li>Real-time activity panel displays:
+                <ul>
+                  <li>Rule creation dates</li>
+                  <li>Changes made</li>
+                  <li>User responsible for each change</li>
+                </ul>
+              </li>
+              <li>Dashboard summary highlights the most recently edited rules, with quick shortcuts back to active work
+              </li>
+              <li>Improves team awareness and increases visibility into updates across the system</li>
+            </ul><b> Archiving & Retrieval </b>
+            <ul>
+              <li>Archive outdated rules with a single click instead of deleting them</li>
+              <li>Archived rules remain retrievable, functioning like a recycle bin for historical reference or future
+                reuse</li>
+              <li>Modernized interface:
+                <ul>
+                  <li>All existing rule actions remain intact, delivered through a cleaner, more intuitive interface
+                  </li>
+                  <li>Reduces cognitive load while supporting faster, more confident decision-making</li>
+                </ul>
+              </li>
+            </ul>
+
+
+            <!-- <div class="second-row">
+            <iframe   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div> -->
+          </section>
+
         </b-col>
       </b-row>
     </section>
@@ -110,19 +180,39 @@ export default {
     return {
       full: false,
       headerDetails: {
-        title: "Building Wealth With Chime",
-        subtitle: "Empowering users to set financial goals and build practical financial literacy skills using their own real-world financial data.",
-        role: "UX Designer and Researcher",
-        timeline: "12 Months (2021-2022)",
-        tools: "Figma, G-Suite, Slack, Virtual Sticky Notes",
-        team : "Valerie Remaker, Katia Meuleman, Aiza Ali, Brisa Jimenez",
-        color: "#005181",
+        title: "Rules Optimizer",
+        subtitle: "Streamlining rule creation and management for Optimal Blue Administrators.",
+        role: "Lead UX Designer",
+        timeline: "17 Months (2023-2025)",
+        tools: "Figma, Axure, Microsoft Teams, UX Tweak",
+        team: "UX Designers, Project Managers, Business Analysts, Development, and Stakeholders",
+        color: "#1979cc",
         accentColor: '#ffffff'
+      }
     }
-  }
-  },  
+  },
   methods: {
   }
 };
 
 </script>
+
+<style lang="sass" scoped>
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* For a 16:9 aspect ratio (standard for YouTube/Vimeo), the calculation is 9/16 = 0.5625, or 56.25% */
+  padding-top: 56.25%;
+  /* If you need a different ratio, e.g., 4:3, use 75% (3/4 = 0.75) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Removes default iframe border */
+}
+</style>

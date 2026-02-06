@@ -8,9 +8,10 @@
         <b-col cols="8">
           <section id="background">
             <h2>Background </h2>
-            <h3> Chime Banking Customers generally have an understanding of their cash flow, but feel they can’t build
-              wealth. </h3>
-            <p>Chime users want to be active participants in their personal finances. They are drawn to Chime’s credit
+              <p>Chime users want to be active participants in their personal finances. They generally have an understanding of their cash flow, but feel they can’t build
+              wealth. 
+              </p>
+             <p>They are drawn to Chime’s credit
               building features and forgiving policies such as no overdraft or monthly fees. They generally have a good
               picture of their net worth but feel they can’t build wealth. Our approach focus on users living pay check
               to
@@ -174,7 +175,7 @@ export default {
         timeline: "12 Months (2021-2022)",
         tools: "Figma, G-Suite, Slack, Virtual Sticky Notes",
         team: "Valerie Remaker, Katia Meuleman, Aiza Ali, Brisa Jimenez",
-        color: "#2DE38E",
+        color: "#2de38e",
         accentColor: '#333333'
       },
       images: [{

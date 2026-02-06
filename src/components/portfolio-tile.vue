@@ -68,7 +68,7 @@ export default {
           name: "Chime Financial Literacy",
           description: "UX Case Study",
           company: "Chime",
-          chipBackground: "#2DE38E !important",
+          chipBackground: "#2de38e !important",
           chipColor: "#505050",
           cardColor: "#C4EAD8"
 

@@ -93,7 +93,7 @@ export default {
       isSticky: false,
       stickyOffset: 50,
       primaryColor: '',
-      headerColor: '#2de38e',
+      headerColor: '#333333',
       headerAccent: '',
       accentColor: ''
     };
