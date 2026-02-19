@@ -110,8 +110,17 @@ export default {
   &:hover {
     opacity: 0.8;
   }
-  height: 20rem;
+  //height: 20rem;
  
+}
+
+/* Make thumbnails responsive inside grid cells */
+.enlarger-thumbnail {
+  display: block;
+  width: 100%;
+  height: 309px;
+  max-width: 100%;
+  object-fit: cover; /* crop if necessary while preserving aspect */
 }
 
 .fullscreen-overlay {
@@ -137,8 +146,9 @@ export default {
 }
 
 .fullscreen-image {
-  max-width: 100%;
-  max-height: 100%;
+  // max-width: 100%;
+  // max-height: 80%;
+  height: 60vh;
   object-fit: contain;
 }
 

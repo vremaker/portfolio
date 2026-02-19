@@ -57,8 +57,8 @@
         ></path>
       </svg>
     </div>
-    <div class="grid grid-cols-4 gap-6 p-8">
-      <div v-for="(image, index) in images" :key="index" class="overflow-hidden rounded-lg h-64 w-full">
+    <div class="grid grid-cols-4 m-5">
+      <div v-for="(image, index) in images" :key="index" class="grid-item">
         <ImageEnlarger :imageSrc="image.src" :imageAlt="image.alt" :caption="image.caption" />
       </div>
     </div>
@@ -130,5 +130,34 @@ export default {
   width: calc(149% + 1.3px);
   height: 100px;
   transform: rotateY(180deg);
+}
+</style>
+
+<style scoped>
+/* Fallback grid styles in case Tailwind isn't enabled. Ensures 4 columns. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.grid-item {
+  /* ensure the image's container doesn't force extra width */
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Small screens: make it responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
