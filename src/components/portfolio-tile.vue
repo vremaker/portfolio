@@ -72,7 +72,26 @@ export default {
           chipColor: "#505050",
           cardColor: "#C4EAD8"
 
-        },
+        },        
+        //  {
+        //   short: "boiling-snow",
+        //   name: "Bursting Pipes and Boiling Snow: Disaster Impacts and Adaptations in the 2021 Texas Power Crisis",
+        //   description: "Academic Research Publication",
+        //   company: "Center for an Informed Public",
+        //   chipBackground: "#271b30 !important",
+        //   chipColor: "#ffffff",
+        //   cardColor: "#E0D8E4"
+        // },       {
+        //   short: "design-system",
+        //   name: "Setting up for Consistency: Building UX Maturity through the implementation of a Design System.",
+        //   description: "UX Case Study",
+        //   company: "Optimal Blue",
+        //   chipBackground: "#1979cc !important",
+        //   chipColor: "#ffffff",
+        //   cardColor: "#C6DEF2"
+        // },
+
+
       ],
     };
   },

@@ -25,7 +25,7 @@
         is-nav
       >
         <BNavbarNav>
-          <router-link :to="{ path: '/', hash: '#portfolio' }" class="button"> <BNavItem  href="#"><span  :style="{color: accentColor}">projects</span></BNavItem></router-link>
+          <a href="#" @click.prevent="scrollToPortfolio" class="button"> <BNavItem href="#"><span  :style="{color: accentColor}">projects</span></BNavItem></a>
           <router-link :to="{ path: '/me' }" @click="scrollToTop" class="button"><BNavItem href="#"><span  :style="{color: accentColor}"> about me</span></BNavItem></router-link>
           <BNavItem href="https://drive.google.com/file/d/1NUT5X41K9irl5SBB76dpzCVG5AYOMNSS/view?usp=sharing" target="_blank"><span  :style="{color: accentColor}">resume</span></BNavItem>
          
@@ -73,6 +73,16 @@ export default {
     scrollToTop() {
       window.scrollTo(0, 0);
     },
+    scrollToPortfolio() {
+      this.$router.push('/').then(() => {
+        this.$nextTick(() => {
+          const portfolioSection = document.getElementById('portfolio');
+          if (portfolioSection) {
+            portfolioSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    },
     handleScroll() {
       this.isSticky = window.scrollY >= this.stickyOffset;
     
@@ -103,10 +113,10 @@ export default {
 <style scoped>
 
 .sticky {
-
-z-index: 1200;
+  position: sticky;
+  top: 0;
+  z-index: 1200;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
 }
 
 </style>

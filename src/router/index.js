@@ -1,5 +1,5 @@
 
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
 
@@ -42,6 +42,12 @@ const routes = [
     component: () => import('../views/portfolio/night-owl.vue')
   },
   {
+    path: '/boiling-snow',
+    name: 'Bursting Pipes',
+    component: () => import('../views/portfolio/boiling-snow.vue')
+
+  },
+  {
     path: '/resume',
     name: 'Resume',
     component: () => import('../views/Resume.vue')
@@ -49,7 +55,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(process.env.BASE_URL),   // FIXED → hash mode for GitHub Pages
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 
   scrollBehavior(to, from, savedPosition) {

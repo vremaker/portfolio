@@ -168,6 +168,33 @@ export default {
   max-width: 90%;
 }
 
+.nav-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 3rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+  z-index: 1002;
+}
+
+.nav-btn:hover {
+  color: #ccc;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-btn.left {
+  position: absolute;
+  left: 20px;
+}
+
+.nav-btn.right {
+  position: absolute;
+  right: 20px;
+}
+
 .close-btn {
   position: absolute;
   top: 20px;
